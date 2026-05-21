@@ -1,0 +1,234 @@
+[
+    {
+        "id": "pkg-01",
+        "title": "East Java & Lombok Photography",
+        "subtitle": "From Volcano Peaks to Island Shores",
+        "location": "Java & Lombok",
+        "duration": "8 Days / 7 Nights",
+        "price_eur": 2450,
+        "image": "https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+        "category": "adventure",
+        "overview": "This journey brings together some of the most extraordinary landscapes of Indonesia—volcanic highlands, hidden waterfalls, and island horizons where light reveals its purest form. From the mystical caldera of Mount Bromo, to the surreal cascades of Tumpak Sewu Waterfall, to the otherworldly blue flames of Ijen Crater, and finally to the tranquil shores of Lombok—this is a journey designed not just to explore, but to experience. Built around light, timing, and atmosphere, every location is chosen with intention: to place you exactly where you need to be… when the light is at its best.",
+        "itinerary": [
+            {
+                "day": "Day 1",
+                "title": "Arrival to Surabaya, Transfer to Bromo",
+                "description": "Arrival to Surabaya. You may arrive on any flight, and our team will arrange a private transfer directly to the highlands of Mount Bromo. The journey takes you away from the city, gradually climbing into cooler air and quieter landscapes. By evening, you arrive near the caldera—your base for the next days. Early rest is recommended, as the first light awaits.",
+                "image": "https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 2",
+                "title": "Bromo Sunrise & Volcanic Exploration",
+                "description": "Early morning departure to Kingkong Hill. From above the clouds, you will witness one of Indonesia’s most iconic landscapes. Mount Bromo rises from the mist and volcanic sand, while the first golden light slowly reveals the surrounding mountains. After sunrise, we descend into the caldera—crossing the vast sea of sand and approaching the crater for closer compositions. In the late morning, return to hotel for rest.",
+                "image": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 3",
+                "title": "Penanjakan Sunrise & Journey to Waterfalls",
+                "description": "We begin once more before sunrise, heading toward Mount Penanjakan—a quieter, more intimate vantage point over Mount Bromo. Less dramatic, more atmospheric. After breakfast, the journey continues south. Volcanic terrain gives way to lush valleys. By late afternoon, we arrive near the waterfall region and head directly to Coban Sriti Waterfall for a sunset session. Hidden and serene, this location offers a more intimate atmosphere.",
+                "image": "https://images.unsplash.com/photo-1532186651327-6ac23687d189?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 4",
+                "title": "Tumpak Sewu Sunrise & Djawatan Forest",
+                "description": "At sunrise, Tumpak Sewu reveals its full scale. Water cascades from every direction, forming a vast natural amphitheater filled with mist, light, and movement. After the morning session, we journey east. In the afternoon, we arrive at Djawatan Forest—an ancient-looking forest where towering trees and sprawling roots create a surreal, almost mythical atmosphere. By evening, we continue to the Ijen area.",
+                "image": "https://images.unsplash.com/photo-1559628233-eb1b1a45564b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 5",
+                "title": "Ijen, The Blue Fire Awakens",
+                "description": "The day begins long before midnight. We depart in the darkness toward Ijen Crater. Blue fire flickers quietly against the darkness—an otherworldly scene. As night fades, the first light reveals the vast crater and its striking turquoise lake. After sunrise, we descend, rest, and travel back to Surabaya. Check-in at hotel, as we prepare to leave Java behind.",
+                "image": "https://images.unsplash.com/photo-1501179691527-711696568b20?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 6",
+                "title": "Lombok: Beneath the Shadow of Rinjani",
+                "description": "Leaving behind the raw intensity of Java, you arrive in Lombok. The road leads toward Sembalun, set beneath the towering presence of Mount Rinjani. The pace slows. The light softens. In the afternoon, we head to Kebon in Sembalun for sunset. Layers of farmland glow under warm evening light, while Rinjani stands silently in the background.",
+                "image": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 7",
+                "title": "From Highlands to the Edge of the Sea",
+                "description": "Sunrise at Selong Hill reveals a quiet geometry—layers of hills and patchwork fields. After breakfast, we journey south. By afternoon, we arrive at Telawas Beach for sunset. Here, the ocean takes over. Rocky formations and dramatic coastlines create a bold contrast. As the sun sets, the sky ignites, casting warm tones across the sea. Overnight in Kuta Lombok.",
+                "image": "https://images.unsplash.com/photo-1582662121703-a178971f11e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 8",
+                "title": "A Quiet End to an Extraordinary Journey",
+                "description": "The final morning arrives gently. We begin with sunrise at Turtle Island—where the ocean is calm and the horizon stretches endlessly. There is no urgency now. After breakfast, we check out and prepare for departure. Because this was never just about the places. It was about the moments. And somewhere along the way, you stopped chasing the perfect moment—and simply learned to be present within it.",
+                "image": "https://images.unsplash.com/photo-1596404768340-410c550dfb6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
+        ],
+        "inclusions": [
+            "Pick-up at Surabaya Airport & Drop to Lombok International Airport",
+            "Domestic Flight from Surabaya to Lombok",
+            "Accommodation (Hotel - Shared 1 Room 2 Peoples)",
+            "Transportation in a Vans Vehicle & MVP",
+            "Bromo Jeep 4x4",
+            "Fuel, Parking fees, and Highway Tolls",
+            "Meals & Drinking Water During Trip",
+            "All Entrance Tickets & National Park Fees",
+            "Photography Instructions and Guiding"
+        ],
+        "exclusions": [
+            "International Flights",
+            "Visas (if applicable)",
+            "Drone Permit in Every National Park",
+            "Alcoholic Drinks (Beer or Wine)",
+            "Health & Travel Insurance",
+            "Personal Expenses & Tips"
+        ],
+        "what_to_bring": [
+            "Camera body (backup recommended) & Lens cleaning kit",
+            "Tripod, remote shutter release, and Headlamp",
+            "Wide-angle lens, Mid-range zoom (24–70mm), Telephoto lens (70–200mm+)",
+            "Extra batteries, memory cards, and a dedicated Camera Bag",
+            "A 6-stop ND Filter & CPL (circular polarizer filter)",
+            "Lightweight and breathable outfits (tropical climate)",
+            "Waterproof/windproof jacket & Warm jacket for highlands (8'C to 15'C)",
+            "Comfortable trekking shoes (non-slip) & Sandals for coastal areas"
+        ]
+    }
+
+    ,
+    {
+        "id": "pkg-02",
+        "title": "Mystic Volcanoes of East Java",
+        "subtitle": "A Journey Through Fire, Mist, and Ancient Craters",
+        "location": "East Java, Indonesia",
+        "duration": "5 Days / 4 Nights",
+        "price_eur": 1650,
+        "image": "../shared/assets/east-java001/bromo1.webp",
+        "category": "adventure",
+        "overview": "Deep within the heart of East Java lies a landscape forged by fire and shaped by time. This 5-day expedition is a pure immersion into one of the most dramatic volcanic regions on Earth. From the towering, curtain-like cascades of Tumpak Sewu to the ethereal sea of sand in the Bromo caldera, and finally into the depths of Ijen’s electric blue fire. This is an intense, visually arresting journey designed for the bold traveler who seeks to stand at the very edge of the earth’s rawest elements.",
+        "itinerary": [
+            {
+                "day": "Day 1",
+                "title": "Arrival in Surabaya & The Colonial Elegance of Malang",
+                "description": "Your journey begins as you land in Surabaya. Our private concierge will meet you at the arrival hall, leaving the bustling city behind as we drive south toward the highland city of Malang. Known for its cool climate and lingering Dutch colonial architecture, Malang offers a gentle introduction to Java. The afternoon is yours to settle in, breathe the crisp air, and prepare your gear for the days ahead. A quiet evening awaits before the true adventure begins.",
+                "image": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 2",
+                "title": "Tumpak Sewu: A Descent into the Earth",
+                "description": "We depart early toward Lumajang. Tumpak Sewu is not merely a waterfall; it is a force of nature. Translating to 'A Thousand Waterfalls', it forms a 360-degree curtain of water crashing down into a deep, emerald gorge. We will descend into the valley, walking through bamboo bridges and mist-filled ravines to stand at its base. The sheer scale and sound of the water are humbling. By afternoon, we transition toward the volcanic highlands, arriving at our lodge near the edge of the Bromo Tengger caldera.",
+                "image": "https://images.unsplash.com/photo-1559628233-eb1b1a45564b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 3",
+                "title": "Bromo: Above the Clouds & The Sea of Sand",
+                "description": "Long before dawn, a 4x4 Jeep takes you up to the highest vantage point of Mount Penanjakan. As the sun breaches the horizon, the mist clears to reveal the prehistoric landscape of Mount Bromo smoking quietly in the center of a vast caldera. After the sunrise, we cross the Sea of Sand, approaching the active crater on foot or by horseback. Standing on the crater rim, listening to the deep roar of the earth, is an unforgettable experience. Later, we drive eastward along the northern coast toward Banyuwangi.",
+                "image": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 4",
+                "title": "Ijen Crater: The Blue Flame & Acid Lake",
+                "description": "We wake at midnight to begin the ascent of Mount Ijen under a canopy of stars. The hike is challenging but rewarding. As we descend into the crater, the darkness is pierced by the ethereal, natural blue flames—burning sulfur gas igniting upon contact with the air. As morning breaks, the crater reveals its centerpiece: a mesmerizing, one-kilometer-wide acidic crater lake, gleaming in surreal turquoise. After the descent, we return to the resort to rest and recover in the gentle sea breeze of the Banyuwangi coast.",
+                "image": "https://images.unsplash.com/photo-1501179691527-711696568b20?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 5",
+                "title": "Baluran Savanna & Departure",
+                "description": "Before concluding the journey, we take a detour to Baluran National Park, affectionately known as the 'Africa of Java'. The dense volcanic jungles suddenly give way to wide, golden savannas where wild deer, macaques, and peacocks roam freely against the backdrop of Mount Baluran. It is a stunning visual contrast to the past four days. By midday, we transfer you to Banyuwangi Airport for your onward flight, or directly to the ferry port if your next chapter lies in Bali.",
+                "image": "https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
+        ],
+        "inclusions": [
+            "VIP Pick-up at Surabaya Airport & Drop off at Banyuwangi Airport / Ferry Port",
+            "Luxury Accommodation (4 Nights in premium lodges & resorts)",
+            "Private Air-Conditioned SUV Transport throughout the journey",
+            "Private 4x4 Jeep for Bromo sunrise exploration",
+            "Professional English-speaking guide & local rangers",
+            "All Entrance Tickets, National Park fees, and donations",
+            "Gas mask rentals for Ijen Crater",
+            "Daily Breakfast, Mineral Water, and select local meals"
+        ],
+        "exclusions": [
+            "Domestic or International Flights",
+            "Ferry crossing tickets to Bali (if applicable)",
+            "Drone Flight Permits in National Parks",
+            "Lunch & Dinner (to allow culinary flexibility)",
+            "Personal expenses, laundry, and tips",
+            "Health & Travel Insurance"
+        ],
+        "what_to_bring": [
+            "Warm layers and a windproof jacket (Temperatures at Bromo & Ijen can drop to 5°C)",
+            "Sturdy, broken-in trekking shoes with good grip",
+            "A comfortable daypack for hiking",
+            "Headlamp for the midnight Ijen hike",
+            "Camera gear, wide-angle lenses, and a sturdy tripod",
+            "Personal medication and sunscreen",
+            "Respirator or N95 masks (standard gas masks will be provided by us)"
+        ]
+    }
+
+    ,
+    {
+        "id": "pkg-03",
+        "title": "Heavens of Central Java",
+        "subtitle": "An Expedition Through Ancient Kingdoms and Misty Plateaus",
+        "location": "Central Java, Indonesia",
+        "duration": "5 Days / 4 Nights",
+        "price_eur": 1450,
+        "image": "../shared/assets/east-java001/candi-borobudur.webp",
+        "category": "culture",
+        "overview": "Step into a realm where time slows down and history is carved into volcanic stone. Central Java is the cultural heartbeat of the archipelago—a place where majestic 9th-century monuments stand under the shadow of active volcanoes, and misty highlands hide sulfur lakes that shift in color. This 5-day photography and cultural expedition places you before the world's finest architectural wonders at the exact moment dawn breaks, capturing the poetic dialogue between light, stone, and ancient spirituality.",
+        "itinerary": [
+            {
+                "day": "Day 1",
+                "title": "Arrival in Yogyakarta & Twilight at Prambanan",
+                "description": "Bespoke arrival at Yogyakarta International Airport. Your private SUV and concierge will escort you straight to your luxury heritage resort. After a brief rest, we head to the grand complex of Prambanan Temple as the afternoon light begins to warm. Rather than the crowded spots, we position you at a secluded vantage point where the towering spires of this 9th-century Hindu masterpiece are silhouetted against the burning tropical twilight. Return to the resort for a welcome dinner reflecting royal Javanese cuisine.",
+                "image": "https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 2",
+                "title": "Borobudur Dawn & The Hidden Valley of Hidden Temples",
+                "description": "We wake in the deep silence before dawn, ascending a quiet hill overlooking the Borobudur valley. As the sun rises behind Mount Merapi, layers of mist slowly peel away, revealing the stone stupas and carved Buddhas of the world's largest Buddhist temple. The sight of mist flowing through the tropical canopy below is deeply spiritual. After breakfast on the hill, we explore the intricate relief panels inside the temple before embarking on a private journey through the surrounding traditional villages, capturing rural life untainted by time.",
+                "image": "https://images.unsplash.com/photo-1596404768340-410c550dfb6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 3",
+                "title": "Mount Merapi Lava Trail & Journey to the Clouds",
+                "description": "Morning brings a shift in energy as we board open-top 4x4 classic jeeps to explore the rugged ruins left by Mount Merapi, one of the planet’s most volatile volcanoes. We navigate massive boulder fields, alien-like ash valleys, and underground bunkers, framing dramatic shots of the smoking peak. In the afternoon, our journey climbs higher into the interior, crossing winding mountain passes until we reach the Dieng Plateau—a mystical caldera suspended 2,000 meters above sea level, wrapped in cold air and eternal fog.",
+                "image": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 4",
+                "title": "Dieng Plateau: The Color-Shifting Earth",
+                "description": "Sunrise finds us atop Sikunir Hill, witnessing the famous 'Golden Sunrise' above a sea of rolling mountain clouds. Below us, the entire Dieng valley awakens. We descend to capture Sikidang Crater, a raw landscape of bubbling mud pools and vents roaring with volcanic steam. The highlight of the afternoon is the Telaga Warna (Color-Shifting Lake), where high sulfur concentrations interact with sunlight, changing the water from turquoise to emerald and deep purple. We frame these vibrant hues from a high cliff edge surrounded by wild pine forests.",
+                "image": "https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "day": "Day 5",
+                "title": "The Whispers of Javanese Royalty & Farewell",
+                "description": "We begin our final morning with a private, exclusive visit to a hidden workshop where ancient Royal Batik is hand-painted using hot wax—a meticulous art form recognized by UNESCO. Capture the macro details of ink meeting fabric and the expressive faces of the elderly artisans. After a curated lunch overlooking the volcanic ridges, your private transport transfers you back to Yogyakarta Airport for your departure flight, carrying with you images of an Indonesia steeped in deep mysticism.",
+                "image": "https://images.unsplash.com/photo-1501179691527-711696568b20?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
+        ],
+        "inclusions": [
+            "VIP Private Pick-up & Drop-off at Yogyakarta International Airport (YIA)",
+            "4 Nights in Ultra-Luxury Boutique Heritage Resorts (Amata Borobudur / Plataran or equivalent)",
+            "Private Premium Chauffeur-Driven SUV with fuel and tolls included",
+            "Private 4x4 Vintage Open-Top Jeep for the Merapi Volcano Expedition",
+            "All Exclusive Premium Entrance Tickets (Borobudur Structure, Prambanan, Dieng Protected Areas)",
+            "Professional English-speaking cultural guide & specialized photography instructor",
+            "Daily Artisan Breakfasts, curated mineral water, and sunset cultural cocktails"
+        ],
+        "exclusions": [
+            "Domestic or International airfares to/from Yogyakarta",
+            "Personal tipping for drivers, jeep pilots, and local guides",
+            "Commercial Drone Permits within temple zones (can be arranged upon special request)",
+            "Alcoholic beverages and personal laundry services",
+            "Travel and comprehensive health insurance"
+        ],
+        "what_to_bring": [
+            "DSLR or Mirrorless camera body with high ISO capabilities (essential for low-light dawn shots)",
+            "Wide-angle lens (16-35mm) for expansive temple architecture and plateau panoramas",
+            "Telephoto zoom lens (70-200mm) to capture distant volcano ridges and candid village faces",
+            "Sturdy carbon-fiber tripod and graduated ND filters for high-contrast sunrises",
+            "Comfortable, breathable cotton wear for humid temple climbs",
+            "Warm layers and windbreaker for Dieng Plateau (temperatures routinely drop to 10°C at night)",
+            "Good traction trail running shoes or light trekking boots"
+        ]
+    }
+]

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Diary | Overlander Indonesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-gallery">
+
+    <div id="preloader">
+        <div class="loader-logo">OVERLANDER INDONESIA</div>
+    </div>
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-desktop">OVERLANDER INDONESIA</span>
+                <span class="logo-mobile">OVERLANDER INDONESIA</span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#destinations">Destinations</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+                <li class="nav-meta">
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn" id="lang-btn"><i class="fas fa-globe"></i> EN <i class="fas fa-angle-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" class="lang-selector" data-lang="EN">EN - English</a>
+                            <a href="#" class="lang-selector" data-lang="DE">DE - Deutsch</a>
+                            <a href="#" class="lang-selector" data-lang="FR">FR - Français</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn" id="currency-btn">EUR (€) <i class="fas fa-angle-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" class="currency-selector" data-currency="EUR">EUR (€)</a>
+                            <a href="#" class="currency-selector" data-currency="USD">USD ($)</a>
+                            <a href="#" class="currency-selector" data-currency="GBP">GBP (£)</a>
+                        </div>
+                    </div>
+                </li>
+                
+                <li><a href="catalog.html" class="btn-book">Book Now</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="gallery-header-section">
+        <div class="container">
+            <h1 class="gallery-title">Visual Diary</h1>
+            <p class="gallery-subtitle">Moments captured across the Indonesian archipelago.</p>
+            
+            <div class="gallery-filters" id="gallery-filters">
+                <button class="filter-pill active" data-filter="all">All Locations</button>
+                <button class="filter-pill" data-filter="java">Java</button>
+                <button class="filter-pill" data-filter="bali">Bali & Lombok</button>
+                <button class="filter-pill" data-filter="komodo">Komodo</button>
+                <button class="filter-pill" data-filter="papua">Papua</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-content">
+        <div class="masonry-grid" id="masonry-grid">
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>OVERLANDER</h2>
+                <p>Luxury Private Tours in Indonesia.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Client Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Tambahkan ini di dalam footer-container, di sebelah footer-links -->
+            <div class="footer-links trust-badges">
+                <h4>Secure Booking</h4>
+                <div class="badges">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+                <p><i class="fas fa-lock"></i> SSL Secured & Verified by Midtrans</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Overlander Indonesia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- GDPR Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to enhance your experience and analyze site traffic. By continuing to browse, you agree to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookie" class="btn-cookie accept">Accept</button>
+            <button id="decline-cookie" class="btn-cookie decline">Decline</button>
+        </div>
+    </div>
+
+    <a href="https://wa.me/6285748175548" class="floating-concierge" target="_blank">
+        <div class="concierge-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <span class="concierge-text">Consult an Expert</span>
+    </a>
+
+    <div class="mobile-bottom-bar">
+        <a href="catalog.html" class="btn-bottom-book">BOOK NOW</a>
+        <a href="https://wa.me/6285748175548" class="btn-bottom-wa" target="_blank">WHATSAPP</a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

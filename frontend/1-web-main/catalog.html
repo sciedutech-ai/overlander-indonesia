@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journeys & Catalog | Overlander Indonesia</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-catalog">
+
+    <div id="preloader">
+        <div class="loader-logo">OVERLANDER INDONESIA</div>
+    </div>
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-desktop">OVERLANDER INDONESIA</span>
+                <span class="logo-mobile">OVERLANDER INDONESIA</span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#destinations">Destinations</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+                <li class="nav-meta">
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn" id="lang-btn"><i class="fas fa-globe"></i> EN <i class="fas fa-angle-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" class="lang-selector" data-lang="EN">EN - English</a>
+                            <a href="#" class="lang-selector" data-lang="DE">DE - Deutsch</a>
+                            <a href="#" class="lang-selector" data-lang="FR">FR - Français</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn" id="currency-btn">EUR (€) <i class="fas fa-angle-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" class="currency-selector" data-currency="EUR">EUR (€)</a>
+                            <a href="#" class="currency-selector" data-currency="USD">USD ($)</a>
+                            <a href="#" class="currency-selector" data-currency="GBP">GBP (£)</a>
+                        </div>
+                    </div>
+                </li>
+                
+                <li><a href="catalog.html" class="btn-book">Book Now</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="section catalog-content">
+        <div class="container"> 
+            
+            <div class="top-filter-bar">
+                
+                <div class="filter-item search-box-top">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search destination or package...">
+                </div>
+
+                <div class="filter-item">
+                    <span class="filter-label">Experience:</span>
+                    <div class="filter-list-inline">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="sailing">
+                            <span class="checkmark"></span>
+                            Sailing
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="culture">
+                            <span class="checkmark"></span>
+                            Culture
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="adventure">
+                            <span class="checkmark"></span>
+                            Adventure
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-item price-filter-top">
+                    <div class="price-header">
+                        <span class="filter-label">Max Price:</span>
+                        <span class="current-price">€<span id="price-value">5000</span></span>
+                    </div>
+                    <input type="range" min="500" max="5000" step="100" value="5000" id="price-slider" class="custom-slider">
+                </div>
+
+            </div>
+
+            <main class="catalog-main full-width">
+                <div id="dynamic-catalog-grid" class="grid-catalog">
+                    </div>
+            </main>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>OVERLANDER</h2>
+                <p>Luxury Private Tours in Indonesia.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html#about">Our Story</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Client Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-links trust-badges">
+                <h4>Secure Booking</h4>
+                <div class="badges">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+                <p><i class="fas fa-lock"></i> SSL Secured & Verified by Midtrans</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Overlander Indonesia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to enhance your experience and analyze site traffic. By continuing to browse, you agree to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookie" class="btn-cookie accept">Accept</button>
+            <button id="decline-cookie" class="btn-cookie decline">Decline</button>
+        </div>
+    </div>
+
+    <a href="https://wa.me/6285748175548" class="floating-concierge" target="_blank">
+        <div class="concierge-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <span class="concierge-text">Consult an Expert</span>
+    </a>
+
+    <div class="mobile-bottom-bar">
+        <a href="catalog.html" class="btn-bottom-book">BOOK NOW</a>
+        <a href="https://wa.me/6285748175548" class="btn-bottom-wa" target="_blank">WHATSAPP</a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
