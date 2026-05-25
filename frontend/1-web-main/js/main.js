@@ -48,17 +48,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // 1. Navbar Scroll Effect
+    // 1. Navbar Scroll Effect (Bottom-to-Top Logic)
     const navbar = document.getElementById('navbar');
+    
     if (navbar) {
+        // Cek apakah ini navbar yang diletakkan di bawah hero (index.html & detail.html)
+        const isBottomNavbar = navbar.classList.contains('navbar-bottom');
+        const heroSection = document.querySelector('.hero') || document.querySelector('.detail-hero');
+        
         window.addEventListener('scroll', () => {
-            // MENCEGAH BUG: Jika navbar punya class 'navbar-solid' (di halaman katalog), jangan ubah apa-apa
-            if(navbar.classList.contains('navbar-solid')) return;
-
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
+            if (isBottomNavbar && heroSection) {
+                // Jika user men-scroll melewati batas tinggi Hero dikurangi tinggi Navbar
+                if (window.scrollY > (heroSection.offsetHeight - navbar.offsetHeight)) {
+                    navbar.classList.add('fixed-top');
+                } else {
+                    navbar.classList.remove('fixed-top');
+                }
             } else {
-                navbar.classList.remove('scrolled');
+                // Logika fallback untuk halaman Catalog & Gallery (Navbar di atas)
+                if(!navbar.classList.contains('navbar-solid')) {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                }
             }
         });
     }

@@ -1,0 +1,374 @@
+/* =================================================== */
+/* DETAIL & BOOKING PAGE STYLES (OVERLANDER LUXURY)    */
+/* =================================================== */
+
+/* --- HERO BANNER --- */
+.detail-hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.detail-hero img {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+    z-index: -2;
+}
+
+.detail-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(11,26,42,0.4), rgba(11,26,42,0.7));
+    z-index: -1;
+}
+
+.detail-meta-top {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.detail-meta-top .divider { color: rgba(255,255,255,0.3); }
+.detail-meta-top i { margin-right: 5px; }
+
+.detail-hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero-subtext {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: #cccccc;
+    letter-spacing: 1px;
+}
+
+/* --- MAIN LAYOUT GRID --- */
+.detail-section {
+    background-color: #ffffff;
+    padding: 80px 5% 120px;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.1fr; /* Pembagian rasio kiri dan kanan */
+    gap: 60px;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: start; /* Penting agar Sticky bekerja */
+}
+
+/* --- LEFT CONTENT (OVERVIEW & ITINERARY) --- */
+.detail-block {
+    margin-bottom: 60px;
+}
+
+.detail-heading {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.detail-paragraph {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #555555;
+}
+
+/* Highlights List */
+.highlights-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.highlights-list li {
+    font-size: 0.95rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.highlights-list i {
+    color: var(--vela-orange);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* --- ACCORDION (ITINERARY) --- */
+.accordion-item {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.accordion-header {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.accordion-header:focus { outline: none; }
+.accordion-header:hover { color: var(--vela-orange); }
+
+.accordion-header i {
+    font-size: 1rem;
+    color: #888;
+    transition: transform 0.4s ease, color 0.3s ease;
+}
+
+/* Konten Accordion yang disembunyikan */
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.accordion-content-inner {
+    padding-bottom: 25px;
+    padding-right: 30px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Saat Accordion Terbuka */
+.accordion-item.active .accordion-header { color: var(--vela-orange); }
+.accordion-item.active .accordion-header i { 
+    transform: rotate(45deg); /* Plus menjadi X */
+    color: var(--vela-orange);
+}
+
+/* --- RIGHT SIDEBAR (STICKY BOOKING CARD) --- */
+.detail-sidebar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 90px; /* Jarak tempel dari Navbar */
+}
+
+.booking-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.06); /* Bayangan mewah */
+}
+
+.booking-price {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.booking-price .price-from {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.booking-price h3 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.booking-price .per-person {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: #888;
+    font-weight: 400;
+}
+
+/* Form Styles khusus di Sidebar */
+.booking-form .form-row {
+    margin-bottom: 15px; /* Jarak lebih rapat untuk sidebar */
+}
+
+/* Custom Checkbox T&C */
+.terms-group { margin: 20px 0; }
+.custom-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.5;
+}
+.custom-checkbox input { display: none; }
+.checkmark {
+    min-width: 16px; height: 16px;
+    border: 1px solid #888;
+    display: inline-block;
+    position: relative;
+    margin-top: 2px;
+}
+.custom-checkbox input:checked + .checkmark { background-color: var(--primary-color); border-color: var(--primary-color); }
+.custom-checkbox input:checked + .checkmark::after {
+    content: ""; position: absolute; top: 1px; left: 4px; width: 4px; height: 8px;
+    border: solid white; border-width: 0 2px 2px 0; transform: rotate(45deg);
+}
+.tnc-link { color: var(--primary-color); font-weight: 600; text-decoration: underline; }
+
+.booking-note {
+    font-size: 0.75rem;
+    color: #888;
+    text-align: center;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 992px) {
+    .detail-grid { grid-template-columns: 1fr; /* Jadi 1 kolom bersusun di Tablet/HP */ }
+    .detail-sidebar { position: static; /* Matikan sticky jika di layar kecil */ }
+    .highlights-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .detail-hero { height: 50vh; }
+    .detail-hero-content h1 { font-size: 2.2rem; }
+    .booking-card { padding: 30px 20px; }
+}
+
+/* --- FLOATING BACK BUTTON --- */
+.btn-back-floating {
+    position: fixed;
+    top: 35px;
+    left: 5%;
+    z-index: 1000;
+    color: #ffffff;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: var(--transition);
+    /* Memberikan efek bayangan pada teks agar tetap terbaca meski background foto terang */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4); 
+}
+
+.btn-back-floating i {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+/* Animasi panah mundur saat disentuh kursor */
+.btn-back-floating:hover {
+    color: var(--vela-orange);
+}
+
+.btn-back-floating:hover i {
+    transform: translateX(-5px);
+}
+
+/* --- PENYESUAIAN STICKY FORM SIDEBAR --- */
+/* (Cari bagian ini di css Anda dan ubah nilai top-nya) */
+.detail-sidebar {
+    position: sticky;
+    position: -webkit-sticky;
+    /* Ubah dari 90px menjadi 30px karena Navbar di atas sudah tidak ada */
+    top: 30px; 
+}
+
+/* Menyembunyikan widget floating WhatsApp index agar tidak bentrok dengan fokus form */
+.floating-concierge {
+    display: none !important; 
+}
+
+/* --- DETAIL PAGE MINIMAL WHITE NAVBAR --- */
+.detail-navbar-white {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff !important; /* Latar belakang putih bersih mutlak */
+    padding: 18px 5%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04); /* Bayangan super tipis agar elegan */
+    z-index: 1000;
+    border-bottom: 1px solid #f0f0f0; /* Garis batas bawah yang sangat halus */
+}
+
+.nav-container-back {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Tombol Back Minimalis */
+.btn-back-minimal {
+    color: #120e2b !important; /* Menggunakan Navy pekat Overlander agar kontras di atas putih */
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: var(--transition);
+}
+
+.btn-back-minimal i {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+/* Efek Hover */
+.btn-back-minimal:hover {
+    color: var(--vela-orange) !important; /* Berubah menjadi Terracotta saat di-hover */
+}
+
+.btn-back-minimal:hover i {
+    transform: translateX(-5px); /* Panah sedikit mundur dengan halus */
+}
+
+/* --- PENYESUAIAN BANNER HERO --- */
+/* Karena navbar sekarang bersifat Fixed (menempel di atas), kita harus mendorong 
+   Hero Banner ke bawah sedikit agar bagian atas gambar tidak tertutup navbar putih */
+.detail-hero {
+    margin-top: 58px; /* Menyesuaikan tinggi persis dari navbar putih */
+}

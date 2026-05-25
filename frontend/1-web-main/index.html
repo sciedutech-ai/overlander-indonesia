@@ -5,285 +5,302 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overlander Indonesia | Luxury Private Tours</title>
     
-    <!-- Google Fonts -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- CSS Internal -->
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/style-index.css">
 </head>
 <body>
 
-    <!-- Preloader -->
     <div id="preloader">
-        <div class="loader-logo">OVERLANDER INDONESIA</div>
+        <div class="loader-logo">OVERLANDER</div>
     </div>
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-desktop">OVERLANDER INDONESIA</span>
-                <span class="logo-mobile">OVERLANDER INDONESIA</span>
-            </a>
-            
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html#destinations">Destinations</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                
-                <li class="nav-meta">
-                    <div class="dropdown">
-                        <a href="#" class="dropbtn" id="lang-btn"><i class="fas fa-globe"></i> EN <i class="fas fa-angle-down"></i></a>
-                        <div class="dropdown-content">
-                            <a href="#" class="lang-selector" data-lang="EN">EN - English</a>
-                            <a href="#" class="lang-selector" data-lang="DE">DE - Deutsch</a>
-                            <a href="#" class="lang-selector" data-lang="FR">FR - Français</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a href="#" class="dropbtn" id="currency-btn">EUR (€) <i class="fas fa-angle-down"></i></a>
-                        <div class="dropdown-content">
-                            <a href="#" class="currency-selector" data-currency="EUR">EUR (€)</a>
-                            <a href="#" class="currency-selector" data-currency="USD">USD ($)</a>
-                            <a href="#" class="currency-selector" data-currency="GBP">GBP (£)</a>
-                        </div>
-                    </div>
-                </li>
-                
-                <li><a href="catalog.html" class="btn-book">Book Now</a></li>
-            </ul>
 
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header class="hero" id="home">
+        <div class="video-container">
+            <img src="../shared/assets/landscape/25.jpg" alt="Hero Background">
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="hero-top-brand fade-in-up">
+            <h1>OVERLANDER</h1>
+            <span class="brand-subtitle">INDONESIA EXPEDITIONS</span>
+        </div>
+
+        <div class="hero-center-cta fade-in-up">
+            <h2 class="enquire-text">ENQUIRE</h2>
+            <a href="catalog.html" class="btn-vela-white">BOOK NOW</a>
+        </div>
+
+        <nav id="navbar" class="navbar navbar-bottom">
+            <div class="nav-container">
+                <a href="index.html" class="logo hide-on-bottom">OVERLANDER INDONESIA</a>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="destinations.html">Destination</a></li>
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="rates.html">Rates</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                </ul>
+
+                <a href="catalog.html" class="btn-book-sticky hide-on-bottom">BOOK NOW</a>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <!-- Ganti src ini dengan video atau gambar resolusi tinggi dari Cloudinary nanti -->
-        <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Beautiful Indonesia">
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content fade-in-up">
-            <h1>Discover the Unseen <br> Indonesia</h1>
-            <p>Curated private tours & bespoke over-land experiences.</p>
-            <a href="#destinations" class="btn-discover">Explore Journeys</a>
-        </div>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about" class="section welcome-section">
         <div class="container reveal">
-            <h2 class="section-title">A Journey Beyond the Ordinary</h2>
-            <p class="section-subtitle">We partner with the finest local experts to craft authentic, luxurious, and deeply personal travel experiences across the Indonesian archipelago.</p>
+            <h2 class="welcome-title">Welcome to Overlander</h2>
+            <div class="welcome-text">
+                <p>Overlander was conceived for modern day adventurers and experiential travelers eager to explore the most remote corners of the Indonesian archipelago. Each journey is fully personalized to accommodate the preferences of our guests. From conquering volcanic ash trails in Bromo to sheer relaxation in secluded savannas, no two experiences are ever the same.</p>
+                <p>With fully equipped luxury 4x4 vehicles accommodating intimate groups, Overlander is perfectly suited for families and groups of friends. Through an Indonesian overland journey blending the best of adventure, refinement and safety, Overlander seeks to redefine rugged luxury by driving off the beaten path and crafting lasting bespoke memories.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Destinations Grid (Meniru katalog Sailvela) -->
-    <section id="destinations" class="section destinations">
-        <div class="container reveal">
-            <h2 class="section-title">Iconic Destinations</h2>
-            <p class="section-subtitle">Swipe through our curated sceneries.</p>
+    <section id="destinations" class="fs-destinations">
+        <div class="fs-slider-container">
+            <div class="fs-slider-track" id="fs-destinations-track">
+                
+                <div class="fs-slide">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Bali & Nusa Tenggara">
+                    <div class="fs-overlay"></div>
+                    <h3 class="fs-title">Bali | Nusa Tenggara</h3>
+                </div>
+                
+                <div class="fs-slide">
+                    <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Komodo National Park">
+                    <div class="fs-overlay"></div>
+                    <h3 class="fs-title">Komodo | Flores</h3>
+                </div>
+                
+                <div class="fs-slide">
+                    <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Java Volcanoes">
+                    <div class="fs-overlay"></div>
+                    <h3 class="fs-title">Bromo | East Java</h3>
+                </div>
+
+            </div>
+
+            <button class="fs-arrow fs-prev"><i class="fas fa-angle-left"></i></button>
+            <button class="fs-arrow fs-next"><i class="fas fa-angle-right"></i></button>
             
-            <div class="grid-catalog">
-                <div class="catalog-card has-slider">
-                    <div class="card-slider-container">
-                        <div class="card-slider-track">
-                            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bali 1">
-                            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bali 2">
-                            <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bali 3">
-                        </div>
-                        <button class="card-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                        <button class="card-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-                        <div class="card-dots">
-                            <span class="c-dot active"></span>
-                            <span class="c-dot"></span>
-                            <span class="c-dot"></span>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Bali & Nusa Tenggara</h3>
-                        <p>Explore</p>
-                    </div>
+            <div class="fs-controls-center">
+                <a href="catalog.html" class="btn-fs-learn">LEARN MORE</a>
+                <div class="fs-dots">
+                    <span class="fs-dot active" data-index="0"></span>
+                    <span class="fs-dot" data-index="1"></span>
+                    <span class="fs-dot" data-index="2"></span>
                 </div>
-
-                <div class="catalog-card has-slider">
-                    <div class="card-slider-container">
-                        <div class="card-slider-track">
-                            <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Komodo 1">
-                            <img src="https://images.unsplash.com/photo-1596404768340-410c550dfb6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Komodo 2">
-                        </div>
-                        <button class="card-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                        <button class="card-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-                        <div class="card-dots">
-                            <span class="c-dot active"></span>
-                            <span class="c-dot"></span>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Komodo National Park</h3>
-                        <p>Explore</p>
-                    </div>
-                </div>
-
-                <div class="catalog-card has-slider">
-                    <div class="card-slider-container">
-                        <div class="card-slider-track">
-                            <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Java 1">
-                            <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Java 2">
-                            <img src="https://images.unsplash.com/photo-1501179691527-711696568b20?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Java 3">
-                        </div>
-                        <button class="card-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                        <button class="card-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-                        <div class="card-dots">
-                            <span class="c-dot active"></span>
-                            <span class="c-dot"></span>
-                            <span class="c-dot"></span>
-                        </div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Java Volcanoes</h3>
-                        <p>Explore</p>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- How it Works Section -->
-    <section id="experiences" class="section experience">
+    <section id="experiences" class="experiences-full-width">
         <div class="container reveal">
-            <h2 class="section-title">The Overlander Way</h2>
-            <p class="section-subtitle">Three steps to your bespoke Indonesian journey.</p>
-            
-            <div class="grid-steps">
-                <div class="step-card">
-                    <h1 class="step-number">01</h1>
-                    <h3>Inquire</h3>
-                    <p>Tell us your dream destinations, duration, and preferences. We listen to every detail.</p>
+            <h2 class="section-title text-center" style="margin-bottom: 40px;">Curated Experiences</h2>
+        </div>
+        
+        <div class="experiences-image-grid reveal">
+            <a href="experience-detail.html" class="exp-image-card">
+                <div class="exp-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Private Yacht Charter">
+                    <div class="exp-overlay"></div>
+                    <h3 class="exp-title">Private Yacht Charter</h3>
                 </div>
-                <div class="step-card">
-                    <h1 class="step-number">02</h1>
-                    <h3>Craft</h3>
-                    <p>Our experts design a personalized itinerary, tailored exclusively for you.</p>
+            </a>
+
+            <a href="experience-detail.html" class="exp-image-card">
+                <div class="exp-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Heli-Tours">
+                    <div class="exp-overlay"></div>
+                    <h3 class="exp-title">Heli-Tours</h3>
                 </div>
-                <div class="step-card">
-                    <h1 class="step-number">03</h1>
-                    <h3>Experience</h3>
-                    <p>Arrive in Indonesia and enjoy a seamless, luxurious adventure guided by locals.</p>
+            </a>
+
+            <a href="experience-detail.html" class="exp-image-card">
+                <div class="exp-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Photography Expeditions">
+                    <div class="exp-overlay"></div>
+                    <h3 class="exp-title">Photography Expeditions</h3>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="section gallery">
-        <div class="container reveal">
-            <h2 class="section-title">Glimpse of Paradise</h2>
-            <p class="section-subtitle">Moments captured across the Indonesian archipelago.</p>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1559628233-eb1b1a45564b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Raja Ampat"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bali Temple"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Komodo Island"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mount Bromo"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1501179691527-711696568b20?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Indonesian Culture"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Resort"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1582662121703-a178971f11e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Nusa Penida"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1596404768340-410c550dfb6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Borobudur"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1532186651327-6ac23687d189?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Traditional Boat"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonial Slider Section -->
-    <section class="section testimonial">
-        <div class="container reveal">
-            <div class="quote-mark">"</div>
-            
-            <div class="testimonial-slider">
-                <div class="testimonial-track" id="testimonial-track">
-                    <!-- Slide 1 -->
-                    <div class="testimonial-slide">
-                        <p class="quote-text">An unforgettable experience. Overlander Indonesia took care of everything, from the private yacht in Komodo to the hidden villas in Bali. Truly a world-class service.</p>
-                        <p class="quote-author">- Elena V., Germany</p>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="testimonial-slide">
-                        <p class="quote-text">The level of detail and personalization is unmatched. Our guide felt like a friend, and the journey through Java was seamlessly orchestrated.</p>
-                        <p class="quote-author">- Mark & Sarah, UK</p>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="testimonial-slide">
-                        <p class="quote-text">If you want to see the real Indonesia with unparalleled luxury and eco-conscious values, this is the only agency you need.</p>
-                        <p class="quote-author">- Dubois Family, France</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Titik Navigasi (Dots) -->
-            <div class="slider-dots">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sustainability Section -->
     <section class="section sustainability">
-        <div class="container reveal">
-            <h2 class="section-title">Travel with Purpose</h2>
-            <p class="section-subtitle">We believe in luxury that respects the earth. Overlander Indonesia partners exclusively with local communities and eco-conscious B2B experts to ensure your journey preserves the natural beauty and cultural heritage of the archipelago.</p>
+        <div class="container reveal text-center">
+            <h2 class="section-title">Committed to Conservation</h2>
+            <p style="max-width: 800px; margin: 0 auto; line-height: 1.8; color: #555;">Our journeys respect the delicate ecosystems of Indonesia. We actively support local community projects and marine conservation efforts to ensure that the beauty we explore remains untouched for generations.</p>
         </div>
     </section>
 
-
-    <section class="section cta-conversion">
+    <section id="enquire" class="section enquire-section">
         <div class="container reveal">
-            <span class="cta-tagline">Your Extraordinary Journey Awaits</span>
-            <h2 class="cta-title">Ready to write your next chapter? <br>Let’s design your bespoke Indonesian expedition.</h2>
-            <p class="cta-subtitle">Whether it's a private superyacht across Raja Ampat or a hidden villa in Ubud, our specialists will craft every detail flawlessly around your preferences.</p>
+            <h2 class="enquire-title">Enquire</h2>
+            <p class="enquire-subtitle">Allow us to tailor your next adventure</p>
             
-            <div class="cta-buttons">
-                <a href="catalog.html" class="btn-cta-gold">Explore Journeys</a>
-                <a href="https://wa.me/6285748175548" class="btn-cta-transparent" target="_blank">Plan a Custom Trip</a>
-            </div>
+            <form id="wa-inquiry-form" class="sailvela-form">
+                
+                <div class="form-row">
+                    <input type="text" id="inq-name" placeholder="Full Name*" required>
+                    <select id="inq-destination" required class="select-placeholder">
+                        <option value="" disabled selected hidden>Destination*</option>
+                        <option value="Bali & Nusa Tenggara">Bali & Nusa Tenggara</option>
+                        <option value="Komodo National Park">Komodo National Park</option>
+                        <option value="Java Volcanoes (Bromo/Ijen)">Java Volcanoes (Bromo/Ijen)</option>
+                        <option value="Papua / Raja Ampat">Papua / Raja Ampat</option>
+                        <option value="Bespoke Expeditions">Bespoke Expeditions</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <input type="text" id="inq-date" placeholder="Planned Date (DD/MM/YYYY)*" required>
+                    <select id="inq-guests" required class="select-placeholder">
+                        <option value="" disabled selected hidden>Number of Guests*</option>
+                        <option value="1-2 Person">1 - 2 Guests</option>
+                        <option value="3-4 Person">3 - 4 Guests</option>
+                        <option value="5-8 Person">5 - 8 Guests</option>
+                        <option value="Bespoke Group">Bespoke Group</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <input type="email" id="inq-email" placeholder="Email Address*" required>
+                    
+                    <div class="phone-input-wrapper">
+                        <select id="inq-country-code" class="country-code-select" required>
+                            </select>
+                        <input type="tel" id="inq-phone" placeholder="WhatsApp Number* (without 0)" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <textarea id="inq-message" rows="5" placeholder="Message*" required></textarea>
+                </div>
+                
+                <div class="form-submit-wrapper">
+                    <button type="submit" class="btn-submit-animated">
+                        <span class="btn-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </span>
+                        <span class="btn-text">SUBMIT</span>
+                    </button>
+                </div>
+                
+            </form>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="gallery-preview" class="gallery-edge-to-edge">
+        <div class="gallery-masonry">
+            
+            <a href="gallery.html" class="gm-item gm-large">
+                <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Overlander Gallery 1">
+                <div class="gm-overlay"><span>Discover More</span></div>
+            </a>
+            
+            <a href="gallery.html" class="gm-item">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Overlander Gallery 2">
+                <div class="gm-overlay"><span>Discover More</span></div>
+            </a>
+            
+            <a href="gallery.html" class="gm-item">
+                <img src="https://images.unsplash.com/photo-1596404768340-410c550dfb6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Overlander Gallery 3">
+                <div class="gm-overlay"><span>Discover More</span></div>
+            </a>
+            
+            <a href="gallery.html" class="gm-item">
+                <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Overlander Gallery 4">
+                <div class="gm-overlay"><span>Discover More</span></div>
+            </a>
+            
+            <a href="gallery.html" class="gm-item">
+                <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Overlander Gallery 5">
+                <div class="gm-overlay"><span>Discover More</span></div>
+            </a>
+
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-brand">
+            
+            <div class="footer-brand-contact">
                 <h2>OVERLANDER</h2>
-                <p>Luxury Private Tours in Indonesia.</p>
+                <p class="footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
+                <ul class="footer-contact-list">
+                    <li><i class="fas fa-phone-alt"></i> +62 (812) 3456 7890</li>
+                    <li><i class="far fa-envelope"></i> explore@overlander.id</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</li>
+                </ul>
             </div>
+
             <div class="footer-links">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="#about">Our Story</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Client Login</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li>
+                        <a href="about.html" class="footer-animated-link">
+                            <span class="actual-text">- About Us</span>
+                            <span aria-hidden="true" class="hover-text">- About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="catalog.html" class="footer-animated-link">
+                            <span class="actual-text">- Journeys</span>
+                            <span aria-hidden="true" class="hover-text">- Journeys</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html" class="footer-animated-link">
+                            <span class="actual-text">- Visual Diary</span>
+                            <span aria-hidden="true" class="hover-text">- Visual Diary</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="enquiry.html" class="footer-animated-link">
+                            <span class="actual-text">- Contact Us</span>
+                            <span aria-hidden="true" class="hover-text">- Contact Us</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
-            <!-- Tambahkan ini di dalam footer-container, di sebelah footer-links -->
+            <div class="footer-links">
+                <h4>Client</h4>
+                <ul>
+                    <li>
+                        <a href="client-login.html" class="footer-animated-link">
+                            <span class="actual-text">- Client Login</span>
+                            <span aria-hidden="true" class="hover-text">- Client Login</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="travel-advisory.html" class="footer-animated-link">
+                            <span class="actual-text">- Travel Advisory</span>
+                            <span aria-hidden="true" class="hover-text">- Travel Advisory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="help-center.html" class="footer-animated-link">
+                            <span class="actual-text">- Help Center</span>
+                            <span aria-hidden="true" class="hover-text">- Help Center</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
             <div class="footer-links trust-badges">
                 <h4>Secure Booking</h4>
                 <div class="badges">
@@ -291,17 +308,61 @@
                     <i class="fab fa-cc-mastercard"></i>
                     <i class="fab fa-cc-amex"></i>
                 </div>
-                <p><i class="fas fa-lock"></i> SSL Secured & Verified by Midtrans</p>
+                <p><i class="fas fa-lock"></i> SSL Secured & Verified</p>
+                
+                <h4 style="margin-top: 35px; margin-bottom: 15px;">Follow Us</h4>
+                <ul class="footer-socials">
+                    <li class="icon-content">
+                        <a data-social="whatsapp" aria-label="Whatsapp" href="https://wa.me/6285748175548" target="_blank">
+                            <div class="filled"></div>
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <div class="tooltip">WhatsApp</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/" target="_blank">
+                            <div class="filled"></div>
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <div class="tooltip">Facebook</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/" target="_blank">
+                            <div class="filled"></div>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="youtube" aria-label="YouTube" href="https://www.youtube.com/" target="_blank">
+                            <div class="filled"></div>
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <div class="tooltip">YouTube</div>
+                    </li>
+                </ul>
             </div>
+
         </div>
+
         <div class="footer-bottom">
-            <p>&copy; 2026 Overlander Indonesia. All Rights Reserved.</p>
+            <div class="footer-copyright">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Overlander Indonesia. All rights reserved. | Design and Develop by <a href="https://sciedutech.my.id" target="_blank" class="developer-link">sciedutech.my.id</a> (<a href="https://instagram.com/ryashda_" target="_blank" class="developer-link">@ryashda_</a>)</p>
+                </div>
+            </div>
+            
+            <div class="footer-legal-links">
+                <a href="#" class="open-modal" data-modal="modal-terms">Terms & Conditions</a>
+                <a href="#" class="open-modal" data-modal="modal-privacy">Privacy Policy</a>
+                <a href="#" class="open-modal" data-modal="modal-cookie">Cookie Policy</a>
+            </div>
+            
         </div>
     </footer>
 
-    <!-- GDPR Cookie Banner -->
     <div id="cookie-banner" class="cookie-banner">
-        <p>We use cookies to enhance your experience and analyze site traffic. By continuing to browse, you agree to our use of cookies.</p>
+        <p>We use cookies to enhance your experience. By continuing to browse, you agree to our use of cookies.</p>
         <div class="cookie-buttons">
             <button id="accept-cookie" class="btn-cookie accept">Accept</button>
             <button id="decline-cookie" class="btn-cookie decline">Decline</button>
@@ -309,17 +370,65 @@
     </div>
 
     <a href="https://wa.me/6285748175548" class="floating-concierge" target="_blank">
-        <div class="concierge-icon">
+        <div class="concierge-sign">
             <i class="fab fa-whatsapp"></i>
         </div>
-        <span class="concierge-text">Consult an Expert</span>
+        <div class="concierge-text">Consult an Expert</div>
     </a>
 
     <div class="mobile-bottom-bar">
         <a href="catalog.html" class="btn-bottom-book">BOOK NOW</a>
-        <a href="https://wa.me/6285748175548" class="btn-bottom-wa" target="_blank">WHATSAPP</a>
+        <a href="https://wa.me/6281234567890" class="btn-bottom-wa" target="_blank">WHATSAPP</a>
     </div>
 
-    <script src="js/main.js"></script>
+    <div id="modal-terms" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2 class="legal-title">Terms & Conditions</h2>
+            <div class="legal-body">
+                <p>Welcome to Overlander Indonesia. By booking an expedition with us, you agree to comply with and be bound by the following terms and conditions.</p>
+                <h3>1. Booking & Payments</h3>
+                <p>A non-refundable deposit of 30% is required to secure your bespoke expedition. The remaining balance must be paid in full 60 days prior to the departure date.</p>
+                <h3>2. Cancellations</h3>
+                <p>Cancellations made within 30 days of the departure date are subject to a 100% cancellation fee. We highly recommend purchasing comprehensive travel insurance.</p>
+                <h3>3. Itinerary Changes</h3>
+                <p>Due to the remote nature of our expeditions, itineraries are subject to change based on weather, safety, and local conditions. Our team will ensure the highest standard of alternatives.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-privacy" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2 class="legal-title">Privacy Policy</h2>
+            <div class="legal-body">
+                <p>At Overlander Indonesia, we prioritize the privacy and security of our clients. This policy outlines how we handle your personal information.</p>
+                <h3>1. Information Collection</h3>
+                <p>We collect information necessary to craft your bespoke journey, including full names, contact details, dietary requirements, and medical conditions strictly for safety purposes.</p>
+                <h3>2. Data Security</h3>
+                <p>All personal data is stored securely and is only accessible to authorized personnel involved in executing your expedition.</p>
+                <h3>3. Third-Party Sharing</h3>
+                <p>We do not sell your data. Information is only shared with trusted local partners (e.g., flight operators, private villas) strictly to facilitate your travel arrangements.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cookie" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2 class="legal-title">Cookie Policy</h2>
+            <div class="legal-body">
+                <p>To provide a seamless and personalized browsing experience, Overlander Indonesia utilizes cookies on our website.</p>
+                <h3>1. What are Cookies?</h3>
+                <p>Cookies are small text files stored on your device that help us understand how you interact with our digital platform.</p>
+                <h3>2. How We Use Them</h3>
+                <p>We use essential cookies for website functionality and analytical cookies to improve our bespoke offerings based on user interactions.</p>
+                <h3>3. Managing Preferences</h3>
+                <p>You can choose to disable analytical cookies through your browser settings, though this may affect the premium experience of our website.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>

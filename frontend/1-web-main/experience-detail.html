@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phinisi Luxury Charter | Overlander Indonesia</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="css/experience.css">
+</head>
+<body>
+
+    <nav id="navbar" class="navbar fixed-top">
+        <div class="nav-container">
+            <a href="index.html" class="logo">OVERLANDER INDONESIA</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destination</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="rates.html">Rates</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+            <a href="catalog.html" class="btn-book-sticky">BOOK NOW</a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="exp-detail-hero">
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Private Yacht Charter">
+        <div class="exp-detail-overlay"></div>
+        <div class="exp-detail-content fade-in-up">
+            <span class="exp-tagline">Curated Experiences</span>
+            <h1>PHINISI LUXURY CHARTER</h1>
+            <p class="exp-subtext">A Floating Sanctuary Across The Archipelago</p>
+        </div>
+    </header>
+
+    <section class="section exp-main-section">
+        <div class="container exp-grid">
+            
+            <div class="exp-content-area">
+                
+                <div class="exp-block reveal">
+                    <h2 class="exp-heading">The Marine Division</h2>
+                    <p class="exp-paragraph">Our Phinisi Luxury Charter redefines maritime exploration. Handcrafted by master boatbuilders in Sulawesi, our vessels are a magnificent blend of ancient Indonesian heritage and contemporary superyacht luxury. Designed specifically for discerning travelers, this is your private floating sanctuary to explore the most secluded and pristine waters of the archipelago.</p>
+                </div>
+
+                <div class="exp-block reveal">
+                    <h2 class="exp-heading">Onboard Amenities</h2>
+                    <div class="amenities-grid">
+                        <div class="amenity-item">
+                            <i class="fas fa-bed"></i>
+                            <h4>Master Suites</h4>
+                            <p>Spacious cabins with panoramic ocean windows, en-suite bathrooms, and premium linens.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Gourmet Dining</h4>
+                            <p>Private onboard chef curating daily menus fusing local flavors with international fine dining.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-swimmer"></i>
+                            <h4>Water Toys</h4>
+                            <p>Fully equipped with snorkeling gear, stand-up paddleboards, and certified diving equipment.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-spa"></i>
+                            <h4>Wellness Deck</h4>
+                            <p>Upper deck lounging area perfect for morning yoga sessions or sunset massages.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-block reveal">
+                    <h2 class="exp-heading">Bespoke Routes</h2>
+                    <p class="exp-paragraph">While every charter is fully customized to your desires, our most celebrated marine expeditions include the prehistoric realms of <strong>Komodo National Park</strong>, the vibrant spice islands of <strong>Banda Neira</strong>, and the unparalleled underwater biodiversity of <strong>Raja Ampat</strong>.</p>
+                </div>
+
+                <div class="exp-inline-gallery reveal">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yacht Deck">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ocean View">
+                </div>
+            </div>
+
+            <aside class="exp-sidebar">
+                <div class="exp-booking-card">
+                    <h3 class="exp-booking-title">Enquire This Experience</h3>
+                    <p class="exp-booking-desc">Connect with our destination architects to tailor this marine charter.</p>
+                    
+                    <form id="wa-inquiry-form" class="sailvela-form">
+                        
+                        <div class="form-row">
+                            <input type="text" id="inq-name" placeholder="Lead Guest Name*" required>
+                        </div>
+
+                        <div class="form-row">
+                            <input type="text" id="inq-destination" value="Phinisi Luxury Charter" readonly style="background: #f9f9f9; color: #888; cursor: not-allowed;">
+                        </div>
+                        
+                        <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <input type="text" id="inq-date" placeholder="Date (DD/MM/YYYY)*" required>
+                            <select id="inq-guests" required class="select-placeholder">
+                                <option value="" disabled selected hidden>Guests*</option>
+                                <option value="1-2 Person">1 - 2 Guests</option>
+                                <option value="3-4 Person">3 - 4 Guests</option>
+                                <option value="5-8 Person">5 - 8 Guests</option>
+                                <option value="Bespoke Group">Group</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <input type="email" id="inq-email" placeholder="Email Address*" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="phone-input-wrapper">
+                                <select id="inq-country-code" class="country-code-select" required></select>
+                                <input type="tel" id="inq-phone" placeholder="WhatsApp Number*" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <textarea id="inq-message" rows="3" placeholder="Any special requests or preferred routes?*" required></textarea>
+                        </div>
+
+                        <div class="form-row" style="margin-top: 10px;">
+                            <label style="display: flex; gap: 10px; font-family: var(--font-body); font-size: 0.8rem; color: #666; cursor: pointer; align-items: flex-start;">
+                                <input type="checkbox" required style="margin-top: 2px;">
+                                <span>I agree to the <a href="#" class="open-modal" data-modal="modal-terms" style="color: var(--primary-color); font-weight: 600;">Terms</a></span>
+                            </label>
+                        </div>
+
+                        <div class="form-submit-wrapper" style="margin-top: 20px;">
+                            <button type="submit" class="btn-submit-animated" style="width: 100%;">
+                                <span class="btn-icon"><i class="fab fa-whatsapp"></i></span>
+                                <span class="btn-text">SEND INQUIRY</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand-contact">
+                <h2>OVERLANDER</h2>
+                <p class="footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
+                <ul class="footer-contact-list">
+                    <li><i class="fas fa-phone-alt"></i> +62 (812) 3456 7890</li>
+                    <li><i class="far fa-envelope"></i> explore@overlander.id</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html" class="footer-animated-link"><span class="actual-text">- About Us</span><span aria-hidden="true" class="hover-text">- About Us</span></a></li>
+                    <li><a href="catalog.html" class="footer-animated-link"><span class="actual-text">- Journeys</span><span aria-hidden="true" class="hover-text">- Journeys</span></a></li>
+                    <li><a href="gallery.html" class="footer-animated-link"><span class="actual-text">- Visual Diary</span><span aria-hidden="true" class="hover-text">- Visual Diary</span></a></li>
+                    <li><a href="#" class="footer-animated-link"><span class="actual-text">- Contact Us</span><span aria-hidden="true" class="hover-text">- Contact Us</span></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Client</h4>
+                <ul>
+                    <li><a href="#" class="footer-animated-link"><span class="actual-text">- Client Login</span><span aria-hidden="true" class="hover-text">- Client Login</span></a></li>
+                    <li><a href="#" class="footer-animated-link"><span class="actual-text">- Travel Advisory</span><span aria-hidden="true" class="hover-text">- Travel Advisory</span></a></li>
+                    <li><a href="#" class="footer-animated-link"><span class="actual-text">- Help Center</span><span aria-hidden="true" class="hover-text">- Help Center</span></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links trust-badges">
+                <h4>Secure Booking</h4>
+                <div class="badges">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+                <p><i class="fas fa-lock"></i> SSL Secured & Verified</p>
+                
+                <h4 style="margin-top: 35px; margin-bottom: 15px;">Follow Us</h4>
+                <ul class="footer-socials">
+                    <li class="icon-content"><a data-social="whatsapp" href="https://wa.me/6285748175548" target="_blank"><div class="filled"></div><i class="fab fa-whatsapp"></i></a><div class="tooltip">WhatsApp</div></li>
+                    <li class="icon-content"><a data-social="facebook" href="https://www.facebook.com/" target="_blank"><div class="filled"></div><i class="fab fa-facebook-f"></i></a><div class="tooltip">Facebook</div></li>
+                    <li class="icon-content"><a data-social="instagram" href="https://www.instagram.com/" target="_blank"><div class="filled"></div><i class="fab fa-instagram"></i></a><div class="tooltip">Instagram</div></li>
+                    <li class="icon-content"><a data-social="youtube" href="https://www.youtube.com/" target="_blank"><div class="filled"></div><i class="fab fa-youtube"></i></a><div class="tooltip">YouTube</div></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; 2026 Overlander Indonesia. All rights reserved. | Design and Develop by <a href="https://sciedutech.my.id" target="_blank" class="developer-link">sciedutech.my.id</a> (<a href="https://instagram.com/ryashda_" target="_blank" class="developer-link">@ryashda_</a>)</p>
+            </div>
+            <div class="footer-legal-links">
+                <a href="#" class="open-modal" data-modal="modal-terms">Terms & Conditions</a>
+                <a href="#" class="open-modal" data-modal="modal-privacy">Privacy Policy</a>
+                <a href="#" class="open-modal" data-modal="modal-cookie">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-terms" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Terms & Conditions</h2><div class="legal-body"><p>Terms detail text...</p></div></div></div>
+    <div id="modal-privacy" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Privacy Policy</h2><div class="legal-body"><p>Privacy detail text...</p></div></div></div>
+    <div id="modal-cookie" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Cookie Policy</h2><div class="legal-body"><p>Cookie detail text...</p></div></div></div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

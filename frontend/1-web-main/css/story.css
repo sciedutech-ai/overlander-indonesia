@@ -1,0 +1,252 @@
+/* =================================================== */
+/* STORY PAGE STYLES (FULL-SCREEN SNAP & MODALS)       */
+/* =================================================== */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    /* Menyembunyikan scrollbar browser bawaan agar lebih imersif (Opsional) */
+    /* scrollbar-width: none; */
+}
+
+/* --- FULL SCREEN SNAP CONTAINER --- */
+.story-snap-container {
+    height: 100vh;
+    overflow-y: scroll;
+    /* Kunci keajaiban Scroll Snap */
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* Menyembunyikan Scrollbar di Webkit (Chrome/Safari) */
+.story-snap-container::-webkit-scrollbar {
+    display: none;
+}
+
+.story-banner {
+    position: relative;
+    height: 100vh; /* 100% tinggi layar */
+    width: 100%;
+    scroll-snap-align: start; /* Berhenti tepat di ujung atas setiap banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.story-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    transform: scale(1.05); /* Sedikit di-zoom agar tidak ada ruang kosong */
+    transition: transform 10s ease-out; /* Animasi bergerak sangat pelan seperti film */
+}
+
+.story-banner:hover .story-bg {
+    transform: scale(1);
+}
+
+.story-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+    z-index: -1;
+}
+
+/* Konten Teks Tengah */
+.story-content {
+    z-index: 1;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.story-meta {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.story-content h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Tombol Read Story ala Dokumenter */
+.btn-read-story {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.btn-read-story .circle {
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.btn-read-story .text {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-read-story:hover .circle {
+    background: #fff;
+    color: var(--primary-color);
+    border-color: #fff;
+    transform: scale(1.1);
+}
+
+.btn-read-story:focus { outline: none; }
+
+/* =================================================== */
+/* FULL SCREEN POP-UP MODAL (THE STORY READER)         */
+/* =================================================== */
+
+.story-modal-fullscreen {
+    position: fixed;
+    top: 100vh; /* Sembunyi di bawah layar */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 10000;
+    overflow-y: auto; /* Agar pop-up bisa di-scroll */
+    visibility: hidden;
+    transition: transform 0.7s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.7s;
+}
+
+/* Animasi Muncul dari Bawah ke Atas (Slide Up) */
+.story-modal-fullscreen.open {
+    visibility: visible;
+    transform: translateY(-100vh); /* Naik menutupi layar penuh */
+}
+
+/* --- Modal Navbar (Tombol Tutup) --- */
+.story-modal-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    z-index: 10;
+}
+
+.story-modal-title {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.close-story-modal {
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-story-modal:hover {
+    color: var(--vela-orange);
+    transform: rotate(90deg);
+}
+
+/* --- Modal Body (Artikel & Foto) --- */
+.story-modal-body {
+    padding: 80px 0 0; /* Padding atas untuk artikel */
+}
+
+/* Typografi Artikel Ala Majalah */
+.story-article {
+    max-width: 800px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.story-article h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--primary-color);
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+
+.story-article p {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 2.2;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.story-article p.lead {
+    font-size: 1.35rem;
+    font-style: italic;
+    color: #666;
+    border-left: 2px solid var(--accent-color);
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+/* Masonry Photo Grid (Galeri Banyak Foto) */
+.story-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Jarak sangat tipis antar foto */
+    padding: 0 10px 10px;
+}
+
+.story-photo-grid img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+/* Membuat foto pertama atau tertentu mengambil 2 kolom penuh (besar) */
+.story-photo-grid .img-large {
+    grid-column: span 2;
+    min-height: 70vh;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .story-photo-grid { grid-template-columns: 1fr; }
+    .story-photo-grid .img-large { grid-column: span 1; min-height: 50vh; }
+    .story-article { margin-bottom: 40px; }
+}

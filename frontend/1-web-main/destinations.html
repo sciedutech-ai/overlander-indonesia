@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archipelago Destinations | Overlander Indonesia</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="css/destinations.css">
+</head>
+<body>
+
+    <nav id="navbar" class="navbar fixed-top">
+        <div class="nav-container">
+            <a href="index.html" class="logo">OVERLANDER INDONESIA</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html" class="active">Destination</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="rates.html">Rates</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+            <a href="catalog.html" class="btn-book-sticky">BOOK NOW</a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="dest-hero">
+        <div class="dest-hero-bg">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Expedition Destinations">
+            <div class="dest-hero-overlay"></div>
+        </div>
+        <div class="dest-hero-content fade-in-up">
+            <span class="dest-tagline">Bespoke Expeditions</span>
+            <h1>THE DESTINATIONS</h1>
+        </div>
+    </section>
+
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-widget-wrapper">
+                
+                <div class="search-box-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="dest-search" placeholder="Search horizons (e.g. Raja Ampat, Bromo)...">
+                </div>
+                
+                <div class="filter-dropdowns">
+                    
+                    <div class="select-wrapper">
+                        <select id="filter-category">
+                            <option value="all">All Experiences</option>
+                            <option value="overland">Bespoke Overland 4x4</option>
+                            <option value="marine">Phinisi Luxury Charter</option>
+                            <option value="aviation">Bespoke Aviation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="select-wrapper">
+                        <select id="filter-price">
+                            <option value="all">All Tiers</option>
+                            <option value="signature">Signature Journeys</option>
+                            <option value="reserve">The Reserve Collection</option>
+                            <option value="ultra-vvip">Ultra VVIP Bespoke</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="dest-grid-section">
+        <div class="container">
+            <div class="destinations-grid">
+                
+                <div class="dest-card reveal" data-category="marine" data-price="reserve">
+                    <div class="dest-img-holder">
+                        <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Raja Ampat">
+                        <span class="dest-badge">Marine</span>
+                    </div>
+                    <div class="dest-details">
+                        <h3>Raja Ampat Archipelago</h3>
+                        <p class="dest-meta">Phinisi Luxury Charter &bull; Reserve Tier</p>
+                        <p class="dest-summary">Sail across majestic limestone karsts and dive into the world's epicentre of marine biodiversity aboard our legendary private vessels.</p>
+                        <a href="destination-detail.html" class="btn-discover">Explore Journey <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="dest-card reveal" data-category="overland" data-price="signature">
+                    <div class="dest-img-holder">
+                        <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bromo Volcanic">
+                        <span class="dest-badge">Overland</span>
+                    </div>
+                    <div class="dest-details">
+                        <h3>Bromo & East Java Caldrons</h3>
+                        <p class="dest-meta">Bespoke Overland 4x4 &bull; Signature Tier</p>
+                        <p class="dest-summary">Conquer dramatic volcanic ash fields and witness ethereal sunrises over ancient craters with our custom long-travel tactical fleet.</p>
+                        <a href="destination-detail.html" class="btn-discover">Explore Journey <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="dest-card reveal" data-category="marine" data-price="signature">
+                    <div class="dest-img-holder">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Komodo National Park">
+                        <span class="dest-badge">Marine</span>
+                    </div>
+                    <div class="dest-details">
+                        <h3>Komodo National Park</h3>
+                        <p class="dest-meta">Phinisi Luxury Charter &bull; Signature Tier</p>
+                        <p class="dest-summary">Encounter prehistoric giants, trek legendary pink sand beaches, and anchor in completely secluded bays under starlit skies.</p>
+                        <a href="destination-detail.html" class="btn-discover">Explore Journey <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="dest-card reveal" data-category="aviation" data-price="ultra-vvip">
+                    <div class="dest-img-holder">
+                        <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Papua Highlands">
+                        <span class="dest-badge">Aviation</span>
+                    </div>
+                    <div class="dest-details">
+                        <h3>Bali & Beyond Heli-Expeditions</h3>
+                        <p class="dest-meta">Bespoke Aviation &bull; Ultra VVIP Tier</p>
+                        <p class="dest-summary">Soar seamlessly high above private islands and active volcanic ranges with zero boundaries, touch down directly onto untamed luxuries.</p>
+                        <a href="destination-detail.html" class="btn-discover">Explore Journey <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand-contact">
+                <h2>OVERLANDER</h2>
+                <p class="footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
+                <ul class="footer-contact-list">
+                    <li><i class="fas fa-phone-alt"></i> +62 (812) 3456 7890</li>
+                    <li><i class="far fa-envelope"></i> explore@overlander.id</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html" class="footer-animated-link"><span class="actual-text">- About Us</span><span aria-hidden="true" class="hover-text">- About Us</span></a></li>
+                    <li><a href="destinations.html" class="footer-animated-link"><span class="actual-text">- Journeys</span><span aria-hidden="true" class="hover-text">- Journeys</span></a></li>
+                    <li><a href="gallery.html" class="footer-animated-link"><span class="actual-text">- Visual Diary</span><span aria-hidden="true" class="hover-text">- Visual Diary</span></a></li>
+                    <li><a href="enquiry.html" class="footer-animated-link"><span class="actual-text">- Contact Us</span><span aria-hidden="true" class="hover-text">- Contact Us</span></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Client</h4>
+                <ul>
+                    <li><a href="client-login.html" class="footer-animated-link"><span class="actual-text">- Client Login</span><span aria-hidden="true" class="hover-text">- Client Login</span></a></li>
+                    <li><a href="travel-advisory.html" class="footer-animated-link"><span class="actual-text">- Travel Advisory</span><span aria-hidden="true" class="hover-text">- Travel Advisory</span></a></li>
+                    <li><a href="help-center.html" class="footer-animated-link"><span class="actual-text">- Help Center</span><span aria-hidden="true" class="hover-text">- Help Center</span></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links trust-badges">
+                <h4>Secure Booking</h4>
+                <div class="badges">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+                <p><i class="fas fa-lock"></i> SSL Secured & Verified</p>
+                
+                <h4 style="margin-top: 35px; margin-bottom: 15px;">Follow Us</h4>
+                <ul class="footer-socials">
+                    <li class="icon-content">
+                        <a data-social="whatsapp" aria-label="Whatsapp" href="https://wa.me/6285748175548" target="_blank">
+                            <div class="filled"></div><i class="fab fa-whatsapp"></i>
+                        </a>
+                        <div class="tooltip">WhatsApp</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/" target="_blank">
+                            <div class="filled"></div><i class="fab fa-facebook-f"></i>
+                        </a>
+                        <div class="tooltip">Facebook</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/" target="_blank">
+                            <div class="filled"></div><i class="fab fa-instagram"></i>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="youtube" aria-label="YouTube" href="https://www.youtube.com/" target="_blank">
+                            <div class="filled"></div><i class="fab fa-youtube"></i>
+                        </a>
+                        <div class="tooltip">YouTube</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; 2026 Overlander Indonesia. All rights reserved. | Design and Develop by <a href="https://sciedutech.my.id" target="_blank" class="developer-link">sciedutech.my.id</a> (<a href="https://instagram.com/ryashda_" target="_blank" class="developer-link">@ryashda_</a>)</p>
+            </div>
+            
+            <div class="footer-legal-links">
+                <a href="#" class="open-modal" data-modal="modal-terms">Terms & Conditions</a>
+                <a href="#" class="open-modal" data-modal="modal-privacy">Privacy Policy</a>
+                <a href="#" class="open-modal" data-modal="modal-cookie">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-terms" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Terms & Conditions</h2><div class="legal-body"><p>Terms detail text...</p></div></div></div>
+    <div id="modal-privacy" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Privacy Policy</h2><div class="legal-body"><p>Privacy detail text...</p></div></div></div>
+    <div id="modal-cookie" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Cookie Policy</h2><div class="legal-body"><p>Cookie detail text...</p></div></div></div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

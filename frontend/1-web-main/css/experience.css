@@ -1,0 +1,189 @@
+/* =================================================== */
+/* EXPERIENCE DETAIL STYLES (LUXURY SPLIT LAYOUT)      */
+/* =================================================== */
+
+/* --- HERO BANNER --- */
+.exp-detail-hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.exp-detail-hero img {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+    z-index: -2;
+}
+
+.exp-detail-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(11,26,42,0.3), rgba(11,26,42,0.7));
+    z-index: -1;
+}
+
+.exp-tagline {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.exp-detail-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    color: #ffffff;
+    letter-spacing: 6px;
+    margin-bottom: 15px;
+}
+
+.exp-subtext {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: #e2e2e2;
+    letter-spacing: 1px;
+}
+
+/* --- MAIN LAYOUT GRID --- */
+.exp-main-section {
+    background-color: #fcfcfc;
+    padding: 100px 5% 120px;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Kolom kiri lebih besar */
+    gap: 70px;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* --- LEFT CONTENT (NARRATIVE) --- */
+.exp-block {
+    margin-bottom: 70px;
+}
+
+.exp-heading {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.exp-paragraph {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #555555;
+}
+
+/* Amenities Grid */
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.amenity-item {
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+    transition: var(--transition);
+}
+
+.amenity-item:hover {
+    border-color: var(--vela-orange);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transform: translateY(-5px);
+}
+
+.amenity-item i {
+    font-size: 1.8rem;
+    color: var(--vela-orange);
+    margin-bottom: 20px;
+}
+
+.amenity-item h4 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.amenity-item p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Inline Gallery */
+.exp-inline-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.exp-inline-gallery img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+/* --- RIGHT SIDEBAR (STICKY BOOKING FORM) --- */
+.exp-sidebar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+}
+
+.exp-booking-card {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+}
+
+.exp-booking-title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.exp-booking-desc {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Form Styles Adjustment */
+.exp-booking-card .form-row {
+    margin-bottom: 20px;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 992px) {
+    .exp-grid { grid-template-columns: 1fr; gap: 50px; }
+    .exp-sidebar { position: static; }
+}
+
+@media (max-width: 768px) {
+    .exp-detail-hero { height: 45vh; }
+    .amenities-grid { grid-template-columns: 1fr; }
+    .exp-inline-gallery { grid-template-columns: 1fr; }
+    .exp-booking-card { padding: 40px 25px; }
+}

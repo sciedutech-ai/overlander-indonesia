@@ -1,0 +1,282 @@
+/* =================================================== */
+/* DESTINATIONS PAGE SPECIFIC STYLES (MINIMAL LUXURY)  */
+/* =================================================== */
+
+/* --- DESTINATIONS HERO --- */
+.dest-hero {
+    position: relative;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.dest-hero-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -2;
+}
+
+.dest-hero-bg img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+
+.dest-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(11, 26, 42, 0.45);
+    z-index: -1;
+}
+
+.dest-hero-content .dest-tagline {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.dest-hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    letter-spacing: 6px;
+    color: var(--text-light);
+}
+
+/* --- THE MINIMALIST FILTER WIDGET BAR --- */
+/* --- THE MINIMALIST FILTER WIDGET BAR (STICKY) --- */
+.filter-section {
+    background-color: #ffffff;
+    padding: 30px 0 20px; /* Padding atas sedikit dikurangi agar rapi saat sticky */
+    border-bottom: 1px solid #eeeeee;
+    
+    /* Keajaiban Sticky Filter */
+    position: sticky;
+    position: -webkit-sticky; /* Dukungan untuk Safari */
+    top: 65px; /* Jarak dari atas layar (menyesuaikan tinggi Navbar fixed-top Anda) */
+    z-index: 990; /* Harus tinggi, tapi tetap 1 lapis di bawah Navbar (z-index: 1000) */
+    
+    /* Memberikan efek bayangan halus agar terpisah dari konten di bawahnya saat di-scroll */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.03); 
+}
+
+.filter-widget-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Kotak Pencarian Minimalis */
+.search-box-container {
+    position: relative;
+    flex: 1;
+    max-width: 500px;
+}
+
+.search-box-container .search-icon {
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    color: #888888;
+    font-size: 0.95rem;
+}
+
+.search-box-container input[type="text"] {
+    width: 100%;
+    padding: 15px 15px 15px 30px; /* Padding kiri lega untuk icon */
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #888888; /* Hanya garis bawah tipis */
+    border-radius: 0;
+    
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-box-container input[type="text"]:focus {
+    border-color: var(--primary-color); /* Memekat saat diklik */
+}
+
+/* Grup Dropdown Filter */
+.filter-dropdowns {
+    display: flex;
+    gap: 25px;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.filter-dropdowns select {
+    padding: 15px 40px 15px 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #888888; /* Garis bawah minimalis */
+    border-radius: 0;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: #444444;
+    cursor: pointer;
+    outline: none;
+    appearance: none; /* Hilangkan arrow bawaan browser */
+    transition: border-color 0.3s ease;
+}
+
+.filter-dropdowns select:focus {
+    border-color: var(--primary-color);
+    color: var(--text-dark);
+}
+
+/* Custom Minimalist Arrow Dropdown */
+.select-wrapper::after {
+    content: "\f107";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%; right: 10px;
+    transform: translateY(-50%);
+    font-size: 0.85rem;
+    color: #888888;
+    pointer-events: none;
+}
+
+/* --- CATALOG DESTINATIONS GRID --- */
+.dest-grid-section {
+    background-color: #ffffff;
+    padding: 80px 0 120px;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Kolom asimetris mewah */
+    gap: 60px 40px; /* Jarak vertikal longgar */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Kartu Destinasi */
+.dest-card {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.dest-img-holder {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.dest-img-holder img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Badge Kategori Tipis */
+.dest-badge {
+    position: absolute;
+    top: 20px; left: 20px;
+    background: rgba(18, 14, 43, 0.85);
+    color: #ffffff;
+    padding: 6px 16px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Detail Teks Kartu */
+.dest-details {
+    padding: 30px 10px 0; /* Padding tipis di dalam */
+}
+
+.dest-details h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.dest-meta {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--vela-orange);
+    margin-bottom: 18px;
+}
+
+.dest-summary {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+/* Tombol Tautan Jelajah */
+.btn-discover {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.btn-discover i {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+/* --- HOVER EFFECTS --- */
+.dest-card:hover .dest-img-holder img {
+    transform: scale(1.04); /* Zoom lembut */
+}
+
+.btn-discover:hover {
+    color: var(--vela-orange);
+}
+
+.btn-discover:hover i {
+    transform: translateX(6px); /* Panah meluncur ke kanan */
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 992px) {
+    .filter-widget-wrapper {
+        flex-direction: column; /* Baris filter menumpuk vertikal di tablet/HP */
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .search-box-container { max-width: 100%; }
+    .filter-dropdowns { width: 100%; justify-content: space-between; }
+    .filter-dropdowns select { flex: 1; }
+}
+
+@media (max-width: 768px) {
+    .destinations-grid {
+        grid-template-columns: 1fr; /* 1 Kolom penuh di HP */
+        gap: 50px;
+    }
+    .dest-hero { height: 40vh; }
+    .dest-details h3 { font-size: 1.5rem; }
+}

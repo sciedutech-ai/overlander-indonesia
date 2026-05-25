@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Sailing Komodo | Overlander Indonesia</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+
+    <nav class="detail-navbar-white">
+        <div class="nav-container-back">
+            <a href="destinations.html" class="btn-back-minimal">
+                <i class="fas fa-arrow-left"></i> <span>Back to Destinations</span>
+            </a>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Komodo Journey Hero">
+        <div class="detail-hero-overlay"></div>
+        <div class="detail-hero-content fade-in-up">
+            <div class="detail-meta-top">
+                <span><i class="fas fa-map-marker-alt"></i> Komodo Archipelago</span>
+                <span class="divider">|</span>
+                <span><i class="far fa-clock"></i> 4 Days / 3 Nights</span>
+            </div>
+            <h1>LUXURY SAILING KOMODO</h1>
+            <p class="hero-subtext">The Reserve Collection &bull; Phinisi Charter</p>
+        </div>
+    </header>
+
+    <section class="section detail-section">
+        <div class="container detail-grid">
+            
+            <div class="detail-main-content">
+                
+                <div class="detail-block reveal">
+                    <h2 class="detail-heading">The Experience</h2>
+                    <p class="detail-paragraph">Embark on a breathtaking journey through the pristine waters of the Komodo Archipelago aboard a private luxury phinisi. Witness ancient dragons, swim with manta rays, and relax on untouched pink sand beaches. This bespoke expedition is crafted for those who seek the ultimate marine adventure without compromising absolute comfort.</p>
+                </div>
+
+                <div class="detail-block reveal">
+                    <h2 class="detail-heading">Journey Highlights</h2>
+                    <ul class="highlights-list">
+                        <li><i class="fas fa-ship"></i> Private luxury wooden Phinisi charter</li>
+                        <li><i class="fas fa-utensils"></i> Full-board gourmet meals by a private chef</li>
+                        <li><i class="fas fa-camera"></i> Guided trekking to Padar Island sunrise</li>
+                        <li><i class="fas fa-water"></i> Snorkeling with Manta Rays & Turtles</li>
+                        <li><i class="fas fa-shuttle-van"></i> VVIP Airport transfers in Labuan Bajo</li>
+                    </ul>
+                </div>
+
+                <div class="detail-block reveal">
+                    <h2 class="detail-heading">Daily Itinerary</h2>
+                    <div class="itinerary-accordion">
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Day 01 / Arrival & Kelor Island</span>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <div class="accordion-content-inner">
+                                    <p>Arrive at Labuan Bajo airport where our concierge will greet you. Transfer to the harbor and board your private yacht. Sail to Kelor Island for a short trek and panoramic views, followed by sunset cocktails on Kalong Island while watching thousands of flying foxes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Day 02 / Padar Island & Pink Beach</span>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <div class="accordion-content-inner">
+                                    <p>Wake up early for a sunrise trek at Padar Island. Enjoy breakfast on board before sailing to the famous Pink Beach for snorkeling in crystal-clear waters and a private beach picnic setup.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Day 03 / Komodo Dragons & Manta Point</span>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <div class="accordion-content-inner">
+                                    <p>Guided trek in Komodo National Park to encounter the prehistoric dragons. In the afternoon, drift snorkel at Manta Point and relax at the crescent-shaped Taka Makassar sandbar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <aside class="detail-sidebar" id="booking-section">
+                <div class="booking-card">
+                    <div class="booking-price">
+                        <span class="price-from">Starting From</span>
+                        <h3>€ 2,400 <span class="per-person">/ group</span></h3>
+                    </div>
+                    
+                    <form class="sailvela-form booking-form" id="bespoke-booking-form">
+                        
+                        <div class="form-row">
+                            <input type="text" id="book-tour" value="Luxury Sailing Komodo" readonly style="background: #f9f9f9; color: #888; cursor: not-allowed;">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-with-icon" style="width: 100%;">
+                                <input type="text" id="book-date" placeholder="Departure Date (DD/MM/YYYY)*" required>
+                            </div>
+                            
+                            <select id="book-guests" required>
+                                <option value="" disabled selected hidden>Guests*</option>
+                                <option value="1-2 Person">1 - 2 Guests</option>
+                                <option value="3-4 Person">3 - 4 Guests</option>
+                                <option value="5-8 Person">5 - 8 Guests</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <input type="text" id="book-name" placeholder="Lead Guest Name*" required>
+                        </div>
+
+                        <div class="form-row">
+                            <input type="email" id="book-email" placeholder="Email Address*" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="phone-input-wrapper">
+                                <select id="book-country-code" class="country-code-select" required></select>
+                                <input type="tel" id="book-phone" placeholder="WhatsApp Number* (without 0)" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <textarea id="book-message" rows="3" placeholder="Dietary requirements or special occasions..."></textarea>
+                        </div>
+
+                        <div class="terms-group">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="book-tnc" required>
+                                <span class="checkmark"></span>
+                                <span class="terms-text">I agree to the <a href="#" class="open-modal" data-modal="modal-terms">Terms & Conditions</a>*</span>
+                            </label>
+                        </div>
+
+                        <div class="form-submit-wrapper">
+                            <button type="submit" class="btn-submit-animated" style="width: 100%;">
+                                <span class="btn-icon"><i class="fab fa-whatsapp"></i></span>
+                                <span class="btn-text">RESERVE NOW</span>
+                            </button>
+                        </div>
+                        <p class="booking-note">No payment required. Finalize details via WhatsApp.</p>
+                    </form>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <div id="modal-terms" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Terms & Conditions</h2><div class="legal-body"><p>Welcome to Overlander Indonesia. By booking an expedition with us, you agree to comply with and be bound by the following terms and conditions.</p><h3>1. Booking & Payments</h3><p>A non-refundable deposit of 30% is required to secure your bespoke expedition. The remaining balance must be paid in full 60 days prior to the departure date.</p></div></div></div>
+
+    <script src="js/index.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>

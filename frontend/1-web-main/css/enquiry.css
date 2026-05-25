@@ -1,0 +1,220 @@
+/* =================================================== */
+/* ENQUIRY PAGE SPECIFIC STYLES (SPLIT LUXURY LAYOUT)  */
+/* =================================================== */
+
+/* --- ENQUIRY HERO --- */
+.enquiry-hero {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.enquiry-hero-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -2;
+}
+
+.enquiry-hero-bg img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+
+.enquiry-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(11, 26, 42, 0.5); /* Overlay navy gelap */
+    z-index: -1;
+}
+
+.enquiry-hero-content .enquiry-tagline {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.enquiry-hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    letter-spacing: 6px;
+    color: var(--text-light);
+}
+
+/* --- MAIN ENQUIRY SECTION --- */
+.enquiry-main-section {
+    background-color: #fcfcfc;
+    padding: 100px 5% 120px;
+}
+
+.enquiry-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Rasio 40% Kiri, 60% Kanan */
+    gap: 80px;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* --- KOLOM KIRI (KONTAK LANGSUNG) --- */
+.enquiry-contact-info {
+    padding-right: 40px;
+}
+
+.enquiry-contact-info h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #666666;
+    margin-bottom: 50px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
+.contact-label {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.contact-link, .contact-text {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    transition: color 0.3s ease;
+    line-height: 1.5;
+}
+
+.contact-link i, .contact-text i {
+    color: var(--vela-orange);
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.contact-link:hover {
+    color: var(--vela-orange);
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+/* --- KOLOM KANAN (FORMULIR LUXURY) --- */
+.enquiry-form-box {
+    background-color: #ffffff;
+    padding: 60px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.04);
+}
+
+.form-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+}
+
+/* Penyesuaian agar form Sailvela terlihat bagus di dalam kotak putih */
+.enquiry-form-box .form-row {
+    margin-bottom: 25px;
+}
+
+.enquiry-form-box input[type="text"],
+.enquiry-form-box input[type="email"],
+.enquiry-form-box select,
+.enquiry-form-box textarea {
+    background-color: transparent !important;
+    border-color: #cccccc !important;
+}
+
+.enquiry-form-box input:focus,
+.enquiry-form-box select:focus,
+.enquiry-form-box textarea:focus {
+    border-color: var(--primary-color) !important;
+}
+
+/* Sembunyikan ikon floating wa di page kontak karena sudah ada form utama */
+.floating-concierge {
+    display: none !important;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 992px) {
+    .enquiry-grid {
+        grid-template-columns: 1fr; /* Jadi 1 kolom panjang ke bawah */
+        gap: 60px;
+    }
+    .enquiry-contact-info {
+        padding-right: 0;
+        text-align: center;
+    }
+    .contact-link, .contact-text {
+        justify-content: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .enquiry-form-box {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .enquiry-hero { height: 40vh; }
+    .enquiry-form-box .form-row[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important; /* Susun Date & Guest jadi 1 kolom di HP */
+    }
+}

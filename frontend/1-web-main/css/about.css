@@ -1,0 +1,380 @@
+/* =================================================== */
+/* ABOUT PAGE BRAND NEW STYLES (SAILVELA MINIMALIST)  */
+/* =================================================== */
+
+/* --- ABOUT HERO BANNER --- */
+.about-hero {
+    position: relative;
+    height: 65vh; /* Tidak sepenuh layar index agar fokus langsung ke cerita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.about-hero-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -2;
+}
+
+.about-hero-bg img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(11, 26, 42, 0.45); /* Navy transparan premium */
+    z-index: -1;
+}
+
+.about-hero-content .about-tagline {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.about-hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    letter-spacing: 8px;
+    color: var(--text-light);
+}
+
+/* --- SECTION 1: MANIFESTO --- */
+.about-manifesto-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Teks mendapat ruang sedikit lebih luas */
+    gap: 80px;
+    align-items: center;
+}
+
+.section-subtitle-left {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.about-section-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+    color: var(--primary-color);
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+
+.manifesto-text p {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 2;
+    color: #444444;
+    margin-bottom: 25px;
+}
+
+/* Bingkai Foto Potret Mewah */
+.portrait-image-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.portrait-image-wrapper img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 1s ease;
+}
+.portrait-image-wrapper:hover img { transform: scale(1.03); }
+
+/* --- SECTION 2: VISION & PURPOSE --- */
+.container-full { width: 100%; padding: 0; }
+
+.values-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0; /* Menempel rapat di tengah secara modern */
+    background: #000;
+}
+
+.value-block-card {
+    position: relative;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Isi teks duduk di bawah */
+    padding: 60px;
+    overflow: hidden;
+}
+
+.value-card-img {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+}
+
+.value-card-img img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.value-card-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to top, rgba(6, 14, 23, 0.95) 0%, rgba(6, 14, 23, 0.3) 100%);
+    z-index: 2;
+}
+
+.value-card-content {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    max-width: 550px;
+}
+
+.value-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.value-card-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.value-card-content p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+.value-block-card:hover .value-card-img img {
+    transform: scale(1.05);
+}
+
+/* --- SECTION 3: PILLARS GRID --- */
+.pillars-edge-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 2%;
+}
+
+.pillar-card {
+    background: #ffffff;
+    border: 1px solid #eee;
+    transition: var(--transition);
+}
+
+.pillar-img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+}
+
+.pillar-img img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.pillar-info {
+    padding: 35px 30px;
+}
+
+.pillar-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.pillar-info p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.pillar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-color: var(--accent-color);
+}
+.pillar-card:hover .pillar-img img { transform: scale(1.04); }
+
+/* --- SECTION 4: COMMITMENT GRID --- */
+.about-commitment { background: #060e17; padding: 120px 5%; }
+
+.commitment-banner {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.commitment-img-side {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.commitment-img-side img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+
+.commitment-text-side { color: #fff; }
+
+.commitment-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.bullet-item h4 {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.bullet-item p {
+    font-size: 0.95rem;
+    color: #a0aec0;
+    line-height: 1.7;
+}
+
+/* --- SECTION 5: ELEGANT VERTICAL TIMELINE --- */
+.about-timeline { background-color: #fcfcfc; padding: 120px 5%; }
+
+.timeline-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: 60px auto 0;
+}
+
+/* Garis Tengah Vertikal */
+.timeline-line {
+    position: absolute;
+    top: 0; bottom: 0; left: 50%;
+    width: 1px;
+    background: #dddddd;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: flex-end; /* Default dorong kanan */
+}
+
+/* Node ganjil di kiri */
+.timeline-item:nth-child(even) {
+    justify-content: flex-start;
+}
+
+/* Penataan Tahun */
+.timeline-date {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    background: #fcfcfc;
+    padding: 0 15px;
+    z-index: 5;
+    font-weight: 600;
+}
+
+/* Titik Sambung */
+.timeline-dot {
+    position: absolute;
+    top: 32px; left: 50%;
+    width: 10px; height: 10px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+/* Kotak Konten Berjalan */
+.timeline-content-box {
+    width: 42%; /* Membagi ruang agar tidak tabrakan di tengah */
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #eee;
+    transition: var(--transition);
+}
+
+.tl-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.tl-img img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+
+.timeline-content-box h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.timeline-content-box p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+.timeline-item:hover .timeline-content-box {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+/* --- RESPONSIVE MOBILE ABOUT --- */
+@media (max-width: 992px) {
+    .about-manifesto-grid { grid-template-columns: 1fr; gap: 40px; }
+    .values-split-grid { grid-template-columns: 1fr; }
+    .value-block-card { height: 50vh; padding: 40px; }
+    .pillars-edge-grid { grid-template-columns: 1fr; gap: 30px; }
+    .commitment-banner { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+    .about-hero { height: 45vh; }
+    .about-section-title { font-size: 2rem; }
+    
+    /* Konversi Timeline ke Satu Kolom Vertikal Penuh di HP */
+    .timeline-line { left: 20px; transform: none; }
+    .timeline-item { justify-content: flex-start !important; padding-left: 50px; margin-bottom: 50px; }
+    .timeline-dot { left: 20px; transform: translateX(-50%); top: 15px; }
+    .timeline-date { position: relative; left: 0; transform: none; top: 0; margin-bottom: 15px; font-size: 1.5rem; padding: 0; display: inline-block;}
+    .timeline-content-box { width: 100%; padding: 20px; }
+}
