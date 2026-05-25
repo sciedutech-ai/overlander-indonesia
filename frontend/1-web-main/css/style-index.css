@@ -1279,33 +1279,7 @@ h1, h2, h3, .logo { font-weight: 400; }
     .cookie-banner p { max-width: 100%; }
 }
 
-@media (max-width: 768px) {
-    /* Merapikan Ukuran Font Welcome Section (Lebih Proporsional) */
-    .section { padding: 80px 5%; }
-    .welcome-title { font-size: 2.2rem; margin-bottom: 30px; line-height: 1.2; }
-    .welcome-text p { font-size: 0.95rem; line-height: 1.8; margin-bottom: 20px; }
-    
-    /* Hamburger Menu Logic */
-    .nav-links {
-        position: fixed; right: -100%; top: 0; left: auto; transform: none; 
-        height: 100vh; width: 80%; background: var(--primary-color); 
-        flex-direction: column; justify-content: center;
-        transition: 0.5s ease; padding: 0; margin: 0; gap: 40px;
-    }
-    .nav-links.active { right: 0; }
-    .hamburger { display: flex; z-index: 1001; }
-    
-    /* Sembunyikan Tombol Book di Navbar Atas pada Mode HP */
-    .btn-book-sticky { display: none !important; }
-    
-    .footer-container { grid-template-columns: 1fr; text-align: center; }
-    .trust-badges .badges { justify-content: center; }
-    
-    .card-btn { opacity: 1; background: rgba(255, 255, 255, 0.8); }
-    .cta-title { font-size: 2.2rem; }
-    .cta-buttons { flex-direction: column; gap: 15px; }
-    .btn-cta-gold, .btn-cta-transparent { width: 100%; }
-}
+
 
 /* --- LEGAL MODALS (FULL SCREEN BLUR & MINIMALIST BOX) --- */
 .legal-modal {
@@ -1406,13 +1380,118 @@ h1, h2, h3, .logo { font-weight: 400; }
     letter-spacing: 1px;
 }
 
-/* Responsif HP */
+/* --- 14. RESPONSIVE MOBILE --- */
 @media (max-width: 768px) {
-    .legal-modal-content {
-        width: 95%;
-        max-height: 90vh;
-        padding: 40px 30px;
+    /* --- MERAPIKAN WELCOME SECTION --- */
+    .section { padding: 80px 5%; }
+    .welcome-title { font-size: 2.2rem; margin-bottom: 30px; line-height: 1.2; }
+    .welcome-text p { font-size: 0.95rem; line-height: 1.8; margin-bottom: 20px; }
+    
+    /* --- FIX 1: MEMINDAHKAN NAVBAR KE ATAS & HAMBURGER KE KANAN --- */
+    .navbar.navbar-bottom {
+        top: 0; /* Memaksa navbar ke atap layar pada HP */
+        bottom: auto;
+        padding: 20px 5%;
     }
+    
+    .navbar-bottom .hide-on-bottom {
+        /* Memunculkan Logo di HP meskipun posisi awal belum di-scroll */
+        opacity: 1 !important; 
+        visibility: visible !important; 
+        pointer-events: auto !important;
+    }
+
+    .nav-container {
+        display: flex; /* Mengganti Grid menjadi Flex agar Logo di Kiri, Hamburger di Kanan */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Sembunyikan Tombol Book Desktop di Navbar Atas pada Mode HP */
+    .btn-book-sticky { display: none !important; }
+
+    /* --- FIX 2: SIDE NAV ANTI BOCOR PIXEL & ANIMASI X --- */
+    .nav-links {
+        position: fixed; 
+        top: 0; 
+        right: 0; /* Merapat ke kanan penuh */
+        left: auto; 
+        transform: translateX(100%); /* Disembunyikan di luar layar tanpa bocor */
+        height: 100vh; 
+        width: 100%; /* Memenuhi seluruh layar */
+        background: var(--primary-color); 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; /* Teks menu di tengah */
+        transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1); /* Animasi super mulus */
+        padding: 0; 
+        margin: 0; 
+        gap: 40px;
+        z-index: 1000;
+    }
+    
+    .nav-links.active { transform: translateX(0); /* Geser masuk */ }
+    
+    .nav-links a { font-size: 1.3rem; color: #ffffff !important; }
+
+    .hamburger { 
+        display: flex; 
+        z-index: 1001; /* Berada di atas menu */
+        position: relative;
+    }
+
+    /* Animasi Hamburger berubah menjadi X saat menu terbuka */
+    .hamburger.active span { background-color: #ffffff !important; }
+    .hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* --- FIX 3: RATA TENGAH SEMUA ELEMEN FOOTER --- */
+    .footer-container { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+        gap: 40px; 
+    }
+    
+    .footer-brand-contact h2 { font-size: 1.6rem; }
+    .footer-desc { margin: 0 auto 25px; } /* Menengahkan paragraf deskripsi */
+    
+    .footer-contact-list li { justify-content: center; } /* Menengahkan ikon dan teks kontak */
+    
+    .footer-links ul { 
+        padding: 0; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; /* Menengahkan tautan About, Destination, dll */
+    }
+    
+    .trust-badges .badges { justify-content: center; }
+    .trust-badges p { justify-content: center; }
+    
+    .footer-socials { justify-content: center; } /* Menengahkan tombol sosial media */
+
+    .footer-legal-links { 
+        flex-direction: column; 
+        align-items: center; /* Menengahkan link Terms, Privacy, dll */
+        gap: 15px; 
+    }
+    
+    .footer-bottom { 
+        flex-direction: column; 
+        justify-content: center; 
+        text-align: center; 
+        gap: 20px; 
+    }
+
+    /* --- ENQUIRE FORM RESPONSIVE --- */
+    .enquire-title { font-size: 3rem; }
+    .sailvela-form .form-row { flex-direction: column; gap: 20px; }
+    
+    /* --- OTHERS (GALLERY, MODALS, dll) --- */
+    .gallery-masonry { grid-template-columns: 1fr; grid-auto-rows: 40vh; }
+    .gm-large { grid-column: span 1; grid-row: span 1; }
+    .legal-modal-content { width: 95%; max-height: 90vh; padding: 40px 30px; }
     .legal-title { font-size: 2.2rem; }
     .close-modal { top: 15px; right: 20px; font-size: 1.5rem; }
 }
