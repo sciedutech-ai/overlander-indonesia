@@ -36,71 +36,20 @@
         </div>
     </nav>
 
-    <main class="story-snap-container">
+    
+
+    <main class="story-snap-container" id="db-story-container">
         
         <section class="story-banner">
-            <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Bromo Story" class="story-bg">
+            <img src="../shared/assets/landscape/29.jpg" alt="Bromo Story" class="story-bg">
             <div class="story-overlay"></div>
-            <div class="story-content">
-                <span class="story-meta">Chapter 01 &bull; East Java</span>
-                <h2>WHISPERS OF THE ASH</h2>
-                <button class="btn-read-story" data-story="story-bromo">
-                    <span class="circle"><i class="fas fa-play"></i></span>
-                    <span class="text">DISCOVER THE STORY</span>
-                </button>
-            </div>
-        </section>
+            </section>
 
-        <section class="story-banner">
-            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Sumba Story" class="story-bg">
-            <div class="story-overlay"></div>
-            <div class="story-content">
-                <span class="story-meta">Chapter 02 &bull; Sumba Island</span>
-                <h2>THE FORGOTTEN SAVANNA</h2>
-                <button class="btn-read-story" data-story="story-sumba">
-                    <span class="circle"><i class="fas fa-play"></i></span>
-                    <span class="text">DISCOVER THE STORY</span>
-                </button>
-            </div>
-        </section>
+        </main>
 
-        <section class="story-banner">
-            <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Raja Ampat Story" class="story-bg">
-            <div class="story-overlay"></div>
-            <div class="story-content">
-                <span class="story-meta">Chapter 03 &bull; Papua</span>
-                <h2 style="color: #fff;">THE SAPPHIRE REALM</h2>
-                <button class="btn-read-story" data-story="story-papua">
-                    <span class="circle"><i class="fas fa-play"></i></span>
-                    <span class="text">DISCOVER THE STORY</span>
-                </button>
+    <div id="db-story-modals">
+        <div id="story-bromo" class="story-modal-fullscreen">
             </div>
-        </section>
-        
-    </main>
-
-    <div id="story-bromo" class="story-modal-fullscreen">
-        <div class="story-modal-nav">
-            <span class="story-modal-title">Chapter 01 / Whispers of the Ash</span>
-            <button class="close-story-modal"><i class="fas fa-times"></i></button>
-        </div>
-        
-        <div class="story-modal-body">
-            <div class="story-article">
-                <h1>Whispers of the Ash: A Dawn in Bromo</h1>
-                <p class="lead">The engine of our custom 4x4 purred gently as we navigated the Sea of Sand, a vast expanse of volcanic ash illuminated only by the blanket of a million stars.</p>
-                <p>Leaving the comfort of our luxury villa at 3 AM is never an easy feat, but the promise of a golden sunrise over the Bromo caldera instantly washed away any fatigue. The Overlander crew had prepared everything seamlessly: heavy wool blankets inside the cabin, hot artisan Arabica coffee brewed live by our field guide, and a completely private ridge route far away from the mass tourist trucks.</p>
-                <p>As the first amber rays pierced through the distant peak of Mount Semeru, the ancient landscape woke from its slumber. This was not just a drive through nature; it was a silent pilgrimage to the volcanic heart of the archipelago, where true rugged refinement meets untouched raw isolation.</p>
-            </div>
-
-            <div class="story-photo-grid">
-                <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Bromo 1" class="img-large">
-                <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bromo 2">
-                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bromo 3">
-                <img src="https://images.unsplash.com/photo-1505080856163-267d49b302c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bromo 4">
-                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bromo 5">
-            </div>
-        </div>
     </div>
 
     <footer class="footer">
@@ -108,11 +57,13 @@
             
             <div class="footer-brand-contact">
                 <h2>OVERLANDER</h2>
-                <p class="footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
+                <!-- Tambahkan id="db-footer-desc" -->
+                <p class="footer-desc" id="db-footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
                 <ul class="footer-contact-list">
-                    <li><i class="fas fa-phone-alt"></i> +62 (812) 3456 7890</li>
-                    <li><i class="far fa-envelope"></i> explore@overlander.id</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</li>
+                    <!-- Bungkus teks dengan span dan beri ID -->
+                    <li><i class="fas fa-phone-alt"></i> <span id="db-footer-phone">+62 (812) 3456 7890</span></li>
+                    <li><i class="far fa-envelope"></i> <span id="db-footer-email">explore@overlander.id</span></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span id="db-footer-address">Bali, Indonesia</span></li>
                 </ul>
             </div>
 
@@ -182,28 +133,32 @@
                 <h4 style="margin-top: 35px; margin-bottom: 15px;">Follow Us</h4>
                 <ul class="footer-socials">
                     <li class="icon-content">
-                        <a data-social="whatsapp" aria-label="Whatsapp" href="https://wa.me/6285748175548" target="_blank">
+                        <!-- Tambahkan id="db-social-wa" -->
+                        <a data-social="whatsapp" aria-label="Whatsapp" href="https://wa.me/6285748175548" target="_blank" id="db-social-wa">
                             <div class="filled"></div>
                             <i class="fab fa-whatsapp"></i>
                         </a>
                         <div class="tooltip">WhatsApp</div>
                     </li>
                     <li class="icon-content">
-                        <a data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/" target="_blank">
+                        <!-- Tambahkan id="db-social-fb" -->
+                        <a data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/" target="_blank" id="db-social-fb">
                             <div class="filled"></div>
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <div class="tooltip">Facebook</div>
                     </li>
                     <li class="icon-content">
-                        <a data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/" target="_blank">
+                        <!-- Tambahkan id="db-social-ig" -->
+                        <a data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/" target="_blank" id="db-social-ig">
                             <div class="filled"></div>
                             <i class="fab fa-instagram"></i>
                         </a>
                         <div class="tooltip">Instagram</div>
                     </li>
                     <li class="icon-content">
-                        <a data-social="youtube" aria-label="YouTube" href="https://www.youtube.com/" target="_blank">
+                        <!-- Tambahkan id="db-social-yt" -->
+                        <a data-social="youtube" aria-label="YouTube" href="https://www.youtube.com/" target="_blank" id="db-social-yt">
                             <div class="filled"></div>
                             <i class="fab fa-youtube"></i>
                         </a>
@@ -230,55 +185,56 @@
         </div>
     </footer>
 
+    <!-- MODAL TERMS -->
     <div id="modal-terms" class="legal-modal">
         <div class="legal-modal-content">
             <span class="close-modal"><i class="fas fa-times"></i></span>
             <h2 class="legal-title">Terms & Conditions</h2>
-            <div class="legal-body">
-                <p>Welcome to Overlander Indonesia. By booking an expedition with us, you agree to comply with and be bound by the following terms and conditions.</p>
-                <h3>1. Booking & Payments</h3>
-                <p>A non-refundable deposit of 30% is required to secure your bespoke expedition. The remaining balance must be paid in full 60 days prior to the departure date.</p>
-                <h3>2. Cancellations</h3>
-                <p>Cancellations made within 30 days of the departure date are subject to a 100% cancellation fee. We highly recommend purchasing comprehensive travel insurance.</p>
-                <h3>3. Itinerary Changes</h3>
-                <p>Due to the remote nature of our expeditions, itineraries are subject to change based on weather, safety, and local conditions. Our team will ensure the highest standard of alternatives.</p>
+            <!-- Tambahkan id="db-modal-terms" dan kosongkan isinya -->
+            <div class="legal-body" id="db-modal-terms">
+                <p>Memuat data dari server...</p>
             </div>
         </div>
     </div>
 
+    <!-- MODAL PRIVACY -->
     <div id="modal-privacy" class="legal-modal">
         <div class="legal-modal-content">
             <span class="close-modal"><i class="fas fa-times"></i></span>
             <h2 class="legal-title">Privacy Policy</h2>
-            <div class="legal-body">
-                <p>At Overlander Indonesia, we prioritize the privacy and security of our clients. This policy outlines how we handle your personal information.</p>
-                <h3>1. Information Collection</h3>
-                <p>We collect information necessary to craft your bespoke journey, including full names, contact details, dietary requirements, and medical conditions strictly for safety purposes.</p>
-                <h3>2. Data Security</h3>
-                <p>All personal data is stored securely and is only accessible to authorized personnel involved in executing your expedition.</p>
-                <h3>3. Third-Party Sharing</h3>
-                <p>We do not sell your data. Information is only shared with trusted local partners (e.g., flight operators, private villas) strictly to facilitate your travel arrangements.</p>
+            <!-- Tambahkan id="db-modal-privacy" dan kosongkan isinya -->
+            <div class="legal-body" id="db-modal-privacy">
+                <p>Memuat data dari server...</p>
             </div>
         </div>
     </div>
 
+    <!-- MODAL COOKIE -->
     <div id="modal-cookie" class="legal-modal">
         <div class="legal-modal-content">
             <span class="close-modal"><i class="fas fa-times"></i></span>
             <h2 class="legal-title">Cookie Policy</h2>
-            <div class="legal-body">
-                <p>To provide a seamless and personalized browsing experience, Overlander Indonesia utilizes cookies on our website.</p>
-                <h3>1. What are Cookies?</h3>
-                <p>Cookies are small text files stored on your device that help us understand how you interact with our digital platform.</p>
-                <h3>2. How We Use Them</h3>
-                <p>We use essential cookies for website functionality and analytical cookies to improve our bespoke offerings based on user interactions.</p>
-                <h3>3. Managing Preferences</h3>
-                <p>You can choose to disable analytical cookies through your browser settings, though this may affect the premium experience of our website.</p>
+            <!-- Tambahkan id="db-modal-cookie" dan kosongkan isinya -->
+            <div class="legal-body" id="db-modal-cookie">
+                <p>Memuat data dari server...</p>
             </div>
         </div>
     </div>
 
-    <script src="js/index.js"></script>
+    <a href="https://wa.me/6285748175548" class="floating-concierge" target="_blank">
+        <div class="concierge-sign">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="concierge-text">Consult an Expert</div>
+    </a>
+
+    <div class="mobile-bottom-bar">
+        <a href="catalog.html" class="btn-bottom-book">BOOK NOW</a>
+        <a href="https://wa.me/6281234567890" class="btn-bottom-wa" target="_blank">WHATSAPP</a>
+    </div>
+
+    
+    <script type="module" src="js/index.js"></script>
     <script src="js/story.js"></script>
 </body>
 </html>

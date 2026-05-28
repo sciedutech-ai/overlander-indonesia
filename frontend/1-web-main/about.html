@@ -38,7 +38,7 @@
 
     <section class="about-hero">
         <div class="about-hero-bg">
-            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Bespoke Expedition Background">
+            <img src="../shared/assets/landscape/DJI_0118.jpg" alt="Bespoke Expedition Background">
             <div class="about-hero-overlay"></div>
         </div>
         <div class="about-hero-content fade-in-up">
@@ -49,17 +49,25 @@
 
     <section class="section about-manifesto">
         <div class="about-manifesto-grid container">
+            
+            <!-- BAGIAN TEKS (Dinamis dari Firebase) -->
             <div class="manifesto-text reveal">
                 <span class="section-subtitle-left">The Manifesto</span>
-                <h2 class="about-section-title">Redefining Rugged Luxury</h2>
-                <p>Overlander Indonesia was born from a pure vision: to bridge the untamed spirit of wild adventure with the absolute highest standards of living comfort. We believe that exploring the most remote destinations in the archipelago should never mean compromising the luxury of your privacy.</p>
-                <p>We design every expedition as a personalized masterpiece. From the roar of a 4x4 engine traversing ancient, arid savannas, to the profound silence of a night spent on the deck of a luxury Phinisi amidst the pristine waters of Flores, we ensure your journey is paved with impeccable service and flawless attention to detail.</p>
-            </div>
-            <div class="manifesto-image reveal">
-                <div class="portrait-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Offroad Destination">
+                <h2 class="about-section-title" id="db-about-title">Redefining Rugged Luxury</h2>
+                
+                <div id="db-about-text">
+                    <p>Overlander Indonesia was born from a pure vision...</p>
+                    <p>We design every expedition as a personalized masterpiece...</p>
                 </div>
             </div>
+            
+            <!-- BAGIAN GAMBAR (Statis dari HTML) -->
+            <div class="manifesto-image reveal">
+                <div class="portrait-image-wrapper">
+                    <img src="../shared/assets/landscape/34.jpg" alt="Luxury Offroad Destination">
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -69,7 +77,7 @@
                 
                 <div class="value-block-card reveal">
                     <div class="value-card-img">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Vision Image">
+                        <img src="../shared/assets/landscape/37.jpg" alt="Vision Image">
                         <div class="value-card-overlay"></div>
                     </div>
                     <div class="value-card-content">
@@ -81,7 +89,7 @@
 
                 <div class="value-block-card reveal">
                     <div class="value-card-img">
-                        <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Noble Purpose Image">
+                        <img src="../shared/assets/landscape/12.jpg" alt="Noble Purpose Image">
                         <div class="value-card-overlay"></div>
                     </div>
                     <div class="value-card-content">
@@ -97,44 +105,48 @@
 
     <section class="section about-pillars">
         <div class="container">
-            <h2 class="section-title text-center">Bespoke Pillars</h2>
-            <p class="section-subtitle">The three main pillars of our boundless comfort services.</p>
+            <h2 class="section-title text-center">The Overlander Pillars</h2>
+            <p class="section-subtitle">The core foundations of our authentic vehicle-dependent adventures.</p>
         </div>
         <div class="pillars-edge-grid reveal">
+            
             <div class="pillar-card">
                 <div class="pillar-img">
-                    <img src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Private Land Expeditions">
+                    <img src="../shared/assets/landscape/15.jpg" alt="Tactical 4x4 Fleet">
                 </div>
                 <div class="pillar-info">
-                    <h3>Bespoke Overland 4x4</h3>
-                    <p>Fully equipped luxury tactical fleets ready to conquer extreme, remote terrains without ever compromising first-class cabin comfort.</p>
+                    <h3>Tactical 4x4 Fleet</h3>
+                    <p>Purpose-built, heavy-duty overland vehicles equipped with premium suspension and recovery gear to safely conquer Indonesia’s most challenging and remote terrains.</p>
                 </div>
             </div>
+
             <div class="pillar-card">
                 <div class="pillar-img">
-                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Private Yacht Charter">
+                    <img src="../shared/assets/brand/6.jpg" alt="Premium Wilderness Camp">
                 </div>
                 <div class="pillar-info">
-                    <h3>Phinisi Luxury Charter</h3>
-                    <p>Navigate the magical Indonesian archipelago aboard legendary wooden vessels, complete with five-star amenities and a dedicated private crew.</p>
+                    <h3>Wilderness Basecamps</h3>
+                    <p>Experience the wild without losing comfort. We utilize premium rooftop tents, portable power stations, and fully-equipped mobile kitchens for the ultimate camp life.</p>
                 </div>
             </div>
+
             <div class="pillar-card">
                 <div class="pillar-img">
-                    <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Aviation Expeditions">
+                    <img src="../shared/assets/landscape/1.jpg" alt="Uncharted Routes Exploration">
                 </div>
                 <div class="pillar-info">
-                    <h3>Bespoke Aviation</h3>
-                    <p>Maximize your time and witness breathtaking aerial landscapes with private helicopters and jets chartered directly to your exclusive destinations.</p>
+                    <h3>Uncharted Trajectories</h3>
+                    <p>Going far beyond conventional tourist maps. We navigate hidden trails, cross dense jungles, and discover untouched landscapes across the archipelago.</p>
                 </div>
             </div>
+
         </div>
     </section>
 
     <section class="section about-commitment">
         <div class="commitment-banner container reveal">
             <div class="commitment-img-side">
-                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Conservation Commitment">
+                <img src="../shared/assets/landscape/21.jpg" alt="Conservation Commitment">
             </div>
             <div class="commitment-text-side">
                 <span class="cta-tagline" style="color: var(--accent-color);">Our Commitment</span>
@@ -165,51 +177,71 @@
             <div class="timeline-wrapper">
                 <div class="timeline-line"></div>
                 
+                <!-- 2022: THE GENESIS -->
                 <div class="timeline-item reveal">
-                    <div class="timeline-date">2022</div>
+                    <div class="timeline-date">2019</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content-box">
                         <div class="tl-img">
-                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Timeline 2022">
+                            <img src="" alt="Overlander Foundation 2022">
                         </div>
                         <h3>The Genesis</h3>
-                        <p>Overlander Indonesia was officially founded with its inaugural tactical route across the volcanic trails of East Java, serving our first premium domestic explorers.</p>
+                        <p>Overlander Indonesia was officially founded, charting our inaugural 4x4 tactical routes across the extreme volcanic trails of East Java for our first premium domestic explorers.</p>
                     </div>
                 </div>
 
+                <!-- 2023: FLEET EXPANSION -->
                 <div class="timeline-item reveal">
                     <div class="timeline-date">2023</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content-box">
                         <div class="tl-img">
-                            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Timeline 2023">
+                            <img src="" alt="4x4 Fleet Expansion 2023">
                         </div>
-                        <h3>Fleet Expansion</h3>
-                        <p>Substantial investment in custom heavy-duty 4x4 SUVs featuring premium air suspension and full satellite communication integration.</p>
+                        <h3>Fleet & Gear Expansion</h3>
+                        <p>Substantial investment in custom heavy-duty 4x4 SUVs featuring premium suspension, heavy-duty winches, and full satellite communication integration for absolute off-grid safety.</p>
                     </div>
                 </div>
 
+                <!-- 2024: PUSHING BOUNDARIES -->
                 <div class="timeline-item reveal">
                     <div class="timeline-date">2024</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content-box">
                         <div class="tl-img">
-                            <img src="https://images.unsplash.com/photo-1505080856163-267d49b302c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Timeline 2024">
+                            <!-- Gambar jalur tanah/savana -->
+                            <img src="" alt="Uncharted Routes 2024">
                         </div>
-                        <h3>The Marine Division</h3>
-                        <p>Launch of an exclusive partnership with the Phinisi Luxury Yacht fleet, opening comprehensive integrated land-and-sea archipelago expedition routes.</p>
+                        <h3>Pushing Boundaries</h3>
+                        <p>Expanding our tracks beyond Java. We pioneered new uncharted overland routes deep into the arid savannas of Sumbawa and the rugged, untouched coastlines of Lombok.</p>
                     </div>
                 </div>
 
+                <!-- 2025: WILDERNESS BASECAMP -->
                 <div class="timeline-item reveal">
                     <div class="timeline-date">2025</div>
                     <div class="timeline-dot"></div>
                     <div class="timeline-content-box">
                         <div class="tl-img">
-                            <img src="https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Timeline 2025">
+                            <!-- Gambar kamping premium/rooftop tent -->
+                            <img src="" alt="Premium Basecamp 2025">
                         </div>
-                        <h3>Bespoke Aviation Integration</h3>
-                        <p>Perfecting our services with private Heli-Tours options, providing absolute connectivity efficiency for VVIP clients across the islands.</p>
+                        <h3>The Ultimate Basecamp</h3>
+                        <p>Elevating the off-grid experience by introducing fully mobile luxury basecamps, featuring premium rooftop tents, wilderness culinary setups, and zero-footprint eco-systems.</p>
+                    </div>
+                </div>
+
+                <!-- 2026 [NOW]: THE CURRENT HORIZON -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-date">2026 <span>[Now]</span></div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content-box">
+                        <div class="tl-img">
+                            <!-- Gambar cakrawala/perjalanan -->
+                            <img src="" alt="The Horizon 2026">
+                        </div>
+                        <h3>The Current Horizon</h3>
+                        <p>Today, we stand as the premier pioneer of luxury vehicle-dependent expeditions in Indonesia, continuously pushing the limits to explore the absolute edges of the archipelago.</p>
                     </div>
                 </div>
 
@@ -222,11 +254,13 @@
             
             <div class="footer-brand-contact">
                 <h2>OVERLANDER</h2>
-                <p class="footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
+                <!-- Tambahkan id="db-footer-desc" -->
+                <p class="footer-desc" id="db-footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
                 <ul class="footer-contact-list">
-                    <li><i class="fas fa-phone-alt"></i> +62 (812) 3456 7890</li>
-                    <li><i class="far fa-envelope"></i> explore@overlander.id</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</li>
+                    <!-- Bungkus teks dengan span dan beri ID -->
+                    <li><i class="fas fa-phone-alt"></i> <span id="db-footer-phone">+62 (812) 3456 7890</span></li>
+                    <li><i class="far fa-envelope"></i> <span id="db-footer-email">explore@overlander.id</span></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span id="db-footer-address">Bali, Indonesia</span></li>
                 </ul>
             </div>
 
@@ -296,28 +330,32 @@
                 <h4 style="margin-top: 35px; margin-bottom: 15px;">Follow Us</h4>
                 <ul class="footer-socials">
                     <li class="icon-content">
-                        <a data-social="whatsapp" aria-label="Whatsapp" href="https://wa.me/6285748175548" target="_blank">
+                        <!-- Tambahkan id="db-social-wa" -->
+                        <a data-social="whatsapp" aria-label="Whatsapp" href="https://wa.me/6285748175548" target="_blank" id="db-social-wa">
                             <div class="filled"></div>
                             <i class="fab fa-whatsapp"></i>
                         </a>
                         <div class="tooltip">WhatsApp</div>
                     </li>
                     <li class="icon-content">
-                        <a data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/" target="_blank">
+                        <!-- Tambahkan id="db-social-fb" -->
+                        <a data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/" target="_blank" id="db-social-fb">
                             <div class="filled"></div>
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <div class="tooltip">Facebook</div>
                     </li>
                     <li class="icon-content">
-                        <a data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/" target="_blank">
+                        <!-- Tambahkan id="db-social-ig" -->
+                        <a data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/" target="_blank" id="db-social-ig">
                             <div class="filled"></div>
                             <i class="fab fa-instagram"></i>
                         </a>
                         <div class="tooltip">Instagram</div>
                     </li>
                     <li class="icon-content">
-                        <a data-social="youtube" aria-label="YouTube" href="https://www.youtube.com/" target="_blank">
+                        <!-- Tambahkan id="db-social-yt" -->
+                        <a data-social="youtube" aria-label="YouTube" href="https://www.youtube.com/" target="_blank" id="db-social-yt">
                             <div class="filled"></div>
                             <i class="fab fa-youtube"></i>
                         </a>
@@ -344,54 +382,55 @@
         </div>
     </footer>
 
+    <!-- MODAL TERMS -->
     <div id="modal-terms" class="legal-modal">
         <div class="legal-modal-content">
             <span class="close-modal"><i class="fas fa-times"></i></span>
             <h2 class="legal-title">Terms & Conditions</h2>
-            <div class="legal-body">
-                <p>Welcome to Overlander Indonesia. By booking an expedition with us, you agree to comply with and be bound by the following terms and conditions.</p>
-                <h3>1. Booking & Payments</h3>
-                <p>A non-refundable deposit of 30% is required to secure your bespoke expedition. The remaining balance must be paid in full 60 days prior to the departure date.</p>
-                <h3>2. Cancellations</h3>
-                <p>Cancellations made within 30 days of the departure date are subject to a 100% cancellation fee. We highly recommend purchasing comprehensive travel insurance.</p>
-                <h3>3. Itinerary Changes</h3>
-                <p>Due to the remote nature of our expeditions, itineraries are subject to change based on weather, safety, and local conditions. Our team will ensure the highest standard of alternatives.</p>
+            <!-- Tambahkan id="db-modal-terms" dan kosongkan isinya -->
+            <div class="legal-body" id="db-modal-terms">
+                <p>Memuat data dari server...</p>
             </div>
         </div>
     </div>
 
+    <!-- MODAL PRIVACY -->
     <div id="modal-privacy" class="legal-modal">
         <div class="legal-modal-content">
             <span class="close-modal"><i class="fas fa-times"></i></span>
             <h2 class="legal-title">Privacy Policy</h2>
-            <div class="legal-body">
-                <p>At Overlander Indonesia, we prioritize the privacy and security of our clients. This policy outlines how we handle your personal information.</p>
-                <h3>1. Information Collection</h3>
-                <p>We collect information necessary to craft your bespoke journey, including full names, contact details, dietary requirements, and medical conditions strictly for safety purposes.</p>
-                <h3>2. Data Security</h3>
-                <p>All personal data is stored securely and is only accessible to authorized personnel involved in executing your expedition.</p>
-                <h3>3. Third-Party Sharing</h3>
-                <p>We do not sell your data. Information is only shared with trusted local partners (e.g., flight operators, private villas) strictly to facilitate your travel arrangements.</p>
+            <!-- Tambahkan id="db-modal-privacy" dan kosongkan isinya -->
+            <div class="legal-body" id="db-modal-privacy">
+                <p>Memuat data dari server...</p>
             </div>
         </div>
     </div>
 
+    <!-- MODAL COOKIE -->
     <div id="modal-cookie" class="legal-modal">
         <div class="legal-modal-content">
             <span class="close-modal"><i class="fas fa-times"></i></span>
             <h2 class="legal-title">Cookie Policy</h2>
-            <div class="legal-body">
-                <p>To provide a seamless and personalized browsing experience, Overlander Indonesia utilizes cookies on our website.</p>
-                <h3>1. What are Cookies?</h3>
-                <p>Cookies are small text files stored on your device that help us understand how you interact with our digital platform.</p>
-                <h3>2. How We Use Them</h3>
-                <p>We use essential cookies for website functionality and analytical cookies to improve our bespoke offerings based on user interactions.</p>
-                <h3>3. Managing Preferences</h3>
-                <p>You can choose to disable analytical cookies through your browser settings, though this may affect the premium experience of our website.</p>
+            <!-- Tambahkan id="db-modal-cookie" dan kosongkan isinya -->
+            <div class="legal-body" id="db-modal-cookie">
+                <p>Memuat data dari server...</p>
             </div>
         </div>
     </div>
 
-    <script src="js/index.js"></script>
+
+    <a href="https://wa.me/6285748175548" class="floating-concierge" target="_blank">
+        <div class="concierge-sign">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="concierge-text">Consult an Expert</div>
+    </a>
+
+    <div class="mobile-bottom-bar">
+        <a href="catalog.html" class="btn-bottom-book">BOOK NOW</a>
+        <a href="https://wa.me/6281234567890" class="btn-bottom-wa" target="_blank">WHATSAPP</a>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>

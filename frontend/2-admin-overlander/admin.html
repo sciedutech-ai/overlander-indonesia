@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Dashboard | Overlander</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <div id="login-screen" class="admin-login-wrapper">
+        <div class="login-box">
+            <h2>OVERLANDER</h2>
+            <p>Executive Access Only</p>
+            <form id="admin-login-form">
+                <div class="form-group">
+                    <input type="email" id="admin-email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="admin-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-admin-primary">AUTHORIZE</button>
+                <p id="login-error" class="error-msg"></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="dashboard-screen" class="dashboard-wrapper" style="display: none;">
+        
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <h3>OVERLANDER</h3>
+                <span>HQ Control Panel</span>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active" data-target="panel-hero"><i class="fas fa-home"></i> Hero Banner</a></li>
+                <li><a href="#" data-target="panel-about"><i class="fas fa-info-circle"></i> About Section</a></li>
+                <li><a href="#" data-target="panel-add-destination"><i class="fas fa-map-marker-alt"></i> Destinations</a></li>
+                <li><a href="#" data-target="panel-experiences"><i class="fas fa-compass"></i> Experiences</a></li>
+                <li><a href="#" data-target="panel-sustainability"><i class="fas fa-leaf"></i> Sustainability</a></li>
+                <li><a href="#" data-target="panel-gallery"><i class="fas fa-images"></i> Gallery Preview</a></li>
+                <li><a href="#" data-target="panel-footer"><i class="fas fa-shoe-prints"></i> Footer</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <button id="btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </aside>
+
+        <main class="admin-main">
+            <header class="main-header">
+                <h2>Content Management</h2>
+                <div class="admin-profile">
+                    <span id="admin-user-email">admin@overlander.id</span>
+                    <div class="avatar"><i class="fas fa-user-tie"></i></div>
+                </div>
+            </header>
+
+            <div class="content-panels">
+                
+                <section id="panel-hero" class="admin-panel active">
+                    <div class="panel-header">
+                        <h3>Hero Banner Configuration</h3>
+                        <button class="btn-save" onclick="saveHeroData()"><i class="fas fa-save"></i> Save Changes</button>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Title (H1)</label>
+                                <input type="text" id="hero-title" placeholder="e.g. OVERLANDER">
+                            </div>
+                            <div class="form-group">
+                                <label>Sub Title</label>
+                                <input type="text" id="hero-subtitle" placeholder="e.g. INDONESIA EXPEDITIONS">
+                            </div>
+                            <div class="form-group">
+                                <label>Button Text</label>
+                                <input type="text" id="hero-btn-text" placeholder="e.g. BOOK NOW">
+                            </div>
+                            <div class="form-group">
+                                <label>Background Image</label>
+                                <input type="file" id="hero-bg-upload" accept="image/*">
+                                <div class="image-preview" id="hero-bg-preview"></div>
+                                <input type="hidden" id="hero-bg-url">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="panel-about" class="admin-panel">
+                    <div class="panel-header">
+                        <h3>Welcome / About Section</h3>
+                        <button class="btn-save" onclick="saveAboutData()"><i class="fas fa-save"></i> Save Changes</button>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label>Section Title</label>
+                            <input type="text" id="about-title" placeholder="Welcome to Overlander">
+                        </div>
+                        <div class="form-group">
+                            <label>Paragraph 1</label>
+                            <textarea id="about-p1" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Paragraph 2</label>
+                            <textarea id="about-p2" rows="4"></textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="panel-add-destination" class="admin-panel">
+    
+                    <div id="dest-table-view">
+                        <div class="panel-header">
+                            <h3>Archipelago Destinations Directory</h3>
+                            <button class="btn-add-new" onclick="openCreateDestination()"><i class="fas fa-plus"></i> Add Destination</button>
+                        </div>
+                        <div class="panel-body">
+                            <div class="data-table-wrapper">
+                                <table class="admin-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Cover Image</th>
+                                            <th>Journey Title & Location</th>
+                                            <th>Tier / Category</th>
+                                            <th>Rates</th>
+                                            <th>Status</th>
+                                            <th style="text-align: right;">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="destinations-list-table">
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="dest-form-view" style="display: none;">
+                        <div class="panel-header">
+                            <h3 id="form-view-title">Draft New Destination</h3>
+                            <div class="panel-actions-group">
+                                <button class="btn-save" style="background: #e2e8f0; color: #120e2b; margin-right: 10px;" onclick="closeDestinationForm()">Cancel</button>
+                                <button class="btn-save" onclick="saveDestinationData()"><i class="fas fa-paper-plane"></i> Publish Journey</button>
+                            </div>
+                        </div>
+                        
+                        <div class="panel-body">
+                            <input type="hidden" id="edit-dest-id">
+
+                            <h4 style="margin-bottom: 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px;">1. Basic Information</h4>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Journey Title</label>
+                                    <input type="text" id="dest-title" placeholder="e.g. Luxury Sailing Komodo">
+                                </div>
+                                <div class="form-group">
+                                    <label>Location Map</label>
+                                    <input type="text" id="dest-location" placeholder="e.g. Komodo Archipelago">
+                                </div>
+                                <div class="form-group">
+                                    <label>Duration</label>
+                                    <input type="text" id="dest-duration" placeholder="e.g. 4 Days / 3 Nights">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tier & Category</label>
+                                    <input type="text" id="dest-tier" placeholder="e.g. The Reserve Collection • Phinisi Charter">
+                                </div>
+                                <div class="form-group">
+                                    <label>Price (Euro)</label>
+                                    <input type="number" id="dest-price" placeholder="e.g. 2400">
+                                </div>
+                                <div class="form-group">
+                                    <label>Pricing Type</label>
+                                    <select id="dest-price-type" style="width: 100%; padding: 12px; border: 1px solid #e0e0e0; border-radius: 4px;">
+                                        <option value="/ person">Per Person</option>
+                                        <option value="/ group">Per Group</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group" style="margin-top: 20px;">
+                                <label>Hero Background Image</label>
+                                <input type="file" id="dest-hero-upload" accept="image/*">
+                                <div class="image-preview" id="dest-hero-preview" style="height: 200px;"></div>
+                                <input type="hidden" id="dest-hero-url">
+                            </div>
+
+                            <h4 style="margin: 40px 0 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px;">2. The Experience (Overview)</h4>
+                            <div class="form-group">
+                                <textarea id="dest-overview" rows="5" placeholder="Write the breathtaking overview here..."></textarea>
+                            </div>
+
+                            <h4 style="margin: 40px 0 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px;">3. Daily Itinerary (With Images)</h4>
+                            <div id="itinerary-builder-container">
+                                <div class="itinerary-day-box" style="background: #f9f9f9; padding: 20px; border: 1px solid #eee; margin-bottom: 20px; border-radius: 5px;">
+                                    <div class="form-group">
+                                        <label>Day Title</label>
+                                        <input type="text" class="itin-title" placeholder="e.g. Day 01 / Arrival & Kelor Island">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Activity Description</label>
+                                        <textarea class="itin-desc" rows="3" placeholder="Describe the day's activities..."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Highlight Image for this Day</label>
+                                        <input type="file" class="itin-image-upload" accept="image/*" onchange="uploadItinImage(this)">
+                                        <input type="hidden" class="itin-image-url"> 
+                                        <span class="upload-status" style="font-size: 0.8rem; color: #df6e4b; margin-top: 5px; display: block;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-add-new" style="background: #eee; color: #333;" onclick="addItineraryDay()"><i class="fas fa-plus"></i> Add Another Day</button>
+                            
+                            <h4 style="margin: 40px 0 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px;">4. Expedition Essentials & Inclusions</h4>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Included in the Price (Gunakan baris baru untuk tiap poin)</label>
+                                    <textarea id="dest-included" rows="5" placeholder="e.g.&#10;Private luxury wooden Phinisi charter&#10;Full-board gourmet meals&#10;VVIP Airport transfers"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Not Included in the Price (Gunakan baris baru untuk tiap poin)</label>
+                                    <textarea id="dest-not-included" rows="5" placeholder="e.g.&#10;International Flights&#10;Personal Expenses&#10;Travel Insurance"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>What to Bring / Gear Essentials (Gunakan baris baru untuk tiap poin)</label>
+                                    <textarea id="dest-gear" rows="5" placeholder="e.g.&#10;Trekking shoes&#10;Personal medication&#10;Dry bag for marine trips"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Clothing & Wear Guidelines (Gunakan baris baru untuk tiap poin)</label>
+                                    <textarea id="dest-clothing" rows="5" placeholder="e.g.&#10;Lightweight breathable outfits&#10;Windproof jacket for mountain sunrise&#10;Warm layers for Bromo/Ijen (8°C - 15°C)"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="panel-experiences" class="admin-panel">
+    
+                    <div id="exp-table-view">
+                        <div class="panel-header">
+                            <h3>Curated Experiences Directory</h3>
+                            <button class="btn-add-new" onclick="openCreateExperience()"><i class="fas fa-plus"></i> Add Experience</button>
+                        </div>
+                        <div class="panel-body">
+                            <div class="data-table-wrapper">
+                                <table class="admin-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Cover Image</th>
+                                            <th>Experience Title</th>
+                                            <th>Tagline & Subtext</th>
+                                            <th>Status</th>
+                                            <th style="text-align: right;">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="experiences-list-table">
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="exp-form-view" style="display: none;">
+                        <div class="panel-header">
+                            <h3 id="exp-form-view-title">Draft New Experience</h3>
+                            <div class="panel-actions-group">
+                                <button class="btn-save" style="background: #e2e8f0; color: #120e2b; margin-right: 10px;" onclick="closeExperienceForm()">Cancel</button>
+                                <button class="btn-save" onclick="saveExperienceData()"><i class="fas fa-paper-plane"></i> Publish Experience</button>
+                            </div>
+                        </div>
+                        
+                        <div class="panel-body">
+                            <input type="hidden" id="edit-exp-id">
+
+                            <h4 style="margin-bottom: 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px;">1. Hero Banner & Basic Info</h4>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Experience Title (H1)</label>
+                                    <input type="text" id="exp-title" placeholder="e.g. Phinisi Luxury Charter">
+                                </div>
+                                <div class="form-group">
+                                    <label>Tagline</label>
+                                    <input type="text" id="exp-tagline" placeholder="e.g. Curated Experiences">
+                                </div>
+                                <div class="form-group" style="grid-column: span 2;">
+                                    <label>Subtext</label>
+                                    <input type="text" id="exp-subtext" placeholder="e.g. A Floating Sanctuary Across The Archipelago">
+                                </div>
+                            </div>
+
+                            <div class="form-group" style="margin-top: 20px;">
+                                <label>Hero Background Image</label>
+                                <input type="file" id="exp-hero-upload" accept="image/*">
+                                <div class="image-preview" id="exp-hero-preview" style="height: 200px;"></div>
+                                <input type="hidden" id="exp-hero-url">
+                            </div>
+
+                            <h4 style="margin: 40px 0 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px;">2. Narrative Content</h4>
+                            <div class="form-group">
+                                <label>The Overview Paragraph</label>
+                                <textarea id="exp-overview" rows="4" placeholder="Write the main description..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Bespoke Routes Paragraph</label>
+                                <textarea id="exp-routes" rows="4" placeholder="Describe the available bespoke routes..."></textarea>
+                            </div>
+
+                            <h4 style="margin: 40px 0 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px;">3. Amenities & Features Builder</h4>
+                            <div id="amenity-builder-container" class="form-grid">
+                                <div class="itinerary-day-box amenity-box" style="background: #f9f9f9; padding: 20px; border: 1px solid #eee; border-radius: 5px; position: relative;">
+                                    <div class="form-group">
+                                        <label>FontAwesome Icon Code</label>
+                                        <input type="text" class="amenity-icon" placeholder="e.g. fas fa-bed">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Amenity Title</label>
+                                        <input type="text" class="amenity-title" placeholder="e.g. Master Suites">
+                                    </div>
+                                    <div class="form-group" style="grid-column: span 2;">
+                                        <label>Description</label>
+                                        <textarea class="amenity-desc" rows="2" placeholder="e.g. Spacious cabins with panoramic ocean windows..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-add-new" style="background: #eee; color: #333; margin-top: 15px;" onclick="addAmenityBox()"><i class="fas fa-plus"></i> Add Another Amenity</button>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <section id="panel-sustainability" class="admin-panel">
+                    <div class="panel-header">
+                        <h3>Sustainability Initiatives</h3>
+                        <button class="btn-save" onclick="saveSustainabilityData()"><i class="fas fa-save"></i> Save Changes</button>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label>Section Title</label>
+                            <input type="text" id="sus-title" placeholder="e.g. Our Commitment to the Earth">
+                        </div>
+                        <div class="form-group">
+                            <label>Main Description</label>
+                            <textarea id="sus-desc" rows="4" placeholder="Describe your sustainability vision and mission..."></textarea>
+                        </div>
+                        
+                        <h4 style="margin: 25px 0 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px;">Key Pillars / Initiatives</h4>
+                        
+                        <div id="sus-pillars-container"></div>
+                        
+                        <button class="btn-add-new" style="background: #eee; color: #333; margin-top: 15px;" onclick="addSusPillarBox()">
+                            <i class="fas fa-plus"></i> Add Initiative Pillar
+                        </button>
+                    </div>
+                </section>
+
+                <section id="panel-gallery" class="admin-panel">
+                    <div class="panel-header">
+                        <h3>Gallery Preview</h3>
+                    </div>
+                    <div class="panel-body">
+                        
+                        <div style="background: #f9f9f9; padding: 20px; border-radius: 5px; margin-bottom: 20px; border: 1px solid #eee;">
+                            <h4 style="margin-bottom: 15px; color: var(--primary);">Upload New Photo</h4>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Image Title / Caption</label>
+                                    <input type="text" id="gallery-title" placeholder="e.g. Sunset at Komodo Island">
+                                </div>
+                                <div class="form-group">
+                                    <label>Choose Photo</label>
+                                    <input type="file" id="gallery-file" accept="image/png, image/jpeg, image/webp" style="padding: 10px 0;">
+                                    <small id="upload-status" style="color: var(--accent); display: none; font-weight: 600; margin-top: 5px;"></small>
+                                </div>
+                            </div>
+                            <button class="btn-save" onclick="addGalleryImage()"><i class="fas fa-upload"></i> Upload & Add to Gallery</button>
+                        </div>
+
+                        <h4 style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">Current Gallery</h4>
+                        <div id="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px;">
+                            </div>
+                        
+                    </div>
+                </section>
+
+                <section id="panel-footer" class="admin-panel">
+                    <div class="panel-header">
+                        <h3>Global Footer & Legal Settings</h3>
+                        <button class="btn-save" onclick="saveFooterData()"><i class="fas fa-save"></i> Save Changes</button>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label>Company Short Bio / Description</label>
+                            <textarea id="footer-desc" rows="3" placeholder="Brief description about Overlander Indonesia in the footer..."></textarea>
+                        </div>
+                        
+                        <h4 style="margin: 25px 0 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 5px;">Contact Information</h4>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" id="footer-email" placeholder="e.g. explore@overlander.id">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone / WhatsApp Number</label>
+                                <input type="text" id="footer-phone" placeholder="e.g. +62 (812) 3456 7890">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Office Address</label>
+                            <input type="text" id="footer-address" placeholder="e.g. Bali, Indonesia">
+                        </div>
+
+                        <h4 style="margin: 25px 0 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 5px;">Social Media Links</h4>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label><i class="fab fa-whatsapp"></i> WhatsApp URL</label>
+                                <input type="url" id="footer-whatsapp" placeholder="https://wa.me/...">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fab fa-facebook"></i> Facebook URL</label>
+                                <input type="url" id="footer-facebook" placeholder="https://facebook.com/...">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fab fa-instagram"></i> Instagram URL</label>
+                                <input type="url" id="footer-instagram" placeholder="https://instagram.com/...">
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fab fa-youtube"></i> YouTube URL</label>
+                                <input type="url" id="footer-youtube" placeholder="https://youtube.com/...">
+                            </div>
+                        </div>
+
+                        <h4 style="margin: 25px 0 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 5px;">Copyright & Developer Credit</h4>
+                        <div class="form-group">
+                            <label>Copyright Announcement</label>
+                            <input type="text" id="footer-copyright" placeholder="e.g. © 2026 Overlander Indonesia. All Rights Reserved.">
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Developer / Agency Name</label>
+                                <input type="text" id="footer-dev-name" placeholder="e.g. sciedutech.my.id">
+                            </div>
+                            <div class="form-group">
+                                <label>Developer Website URL</label>
+                                <input type="url" id="footer-dev-web" placeholder="e.g. https://sciedutech.my.id">
+                            </div>
+                            <div class="form-group">
+                                <label>Developer Social Media Handle</label>
+                                <input type="text" id="footer-dev-sosmed-name" placeholder="e.g. @ryashda_">
+                            </div>
+                            <div class="form-group">
+                                <label>Developer Social Media URL</label>
+                                <input type="url" id="footer-dev-sosmed-url" placeholder="e.g. https://instagram.com/ryashda_">
+                            </div>
+                        </div>
+
+                        <h4 style="margin: 25px 0 15px; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 5px;">Legal Documents (HTML Supported)</h4>
+                        <div class="form-group">
+                            <label>Terms & Conditions Content</label>
+                            <textarea id="footer-terms" rows="6" placeholder="<p>Welcome to Overlander...</p><h3>1. Booking</h3>..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Privacy Policy Content</label>
+                            <textarea id="footer-privacy" rows="6" placeholder="<p>At Overlander...</p>..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Cookie Policy Content</label>
+                            <textarea id="footer-cookie" rows="6" placeholder="<p>To provide a seamless...</p>..."></textarea>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+                </div>
+        </main>
+    </div>
+
+    <script type="module" src="js/admin.js"></script>
+</body>
+</html>

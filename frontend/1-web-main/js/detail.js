@@ -1,34 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     // ==========================================
-    // 1. ACCORDION LOGIC (ITINERARY)
+    // 1. ACCORDION LOGIC (Dibuat sebagai fungsi Global)
     // ==========================================
-    const accordionItems = document.querySelectorAll('.accordion-item');
+    window.initAccordion = function() {
+        const accordionItems = document.querySelectorAll('.accordion-item');
 
-    accordionItems.forEach(item => {
-        const header = item.querySelector('.accordion-header');
-        const body = item.querySelector('.accordion-body');
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+            const body = item.querySelector('.accordion-body');
 
-        header.addEventListener('click', () => {
-            // Tutup semua accordion yang sedang terbuka (Opsional: hapus jika ingin bisa buka semua bersamaan)
-            accordionItems.forEach(otherItem => {
-                if (otherItem !== item && otherItem.classList.contains('active')) {
-                    otherItem.classList.remove('active');
-                    otherItem.querySelector('.accordion-body').style.maxHeight = null;
+            // Hapus event listener lama agar tidak dobel jika dipanggil 2 kali
+            const newHeader = header.cloneNode(true);
+            header.parentNode.replaceChild(newHeader, header);
+
+            newHeader.addEventListener('click', () => {
+                accordionItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.accordion-body').style.maxHeight = null;
+                    }
+                });
+
+                item.classList.toggle('active');
+                if (item.classList.contains('active')) {
+                    body.style.maxHeight = body.scrollHeight + "px";
+                } else {
+                    body.style.maxHeight = null;
                 }
             });
-
-            // Toggle accordion yang diklik
-            item.classList.toggle('active');
-            
-            if (item.classList.contains('active')) {
-                // Set max-height sesuai tinggi konten aslinya agar animasi mulus
-                body.style.maxHeight = body.scrollHeight + "px";
-            } else {
-                body.style.maxHeight = null;
-            }
         });
-    });
+    };
+
 
     // ==========================================
     // 2. BESPOKE BOOKING FORM (WHATSAPP LOGIC)

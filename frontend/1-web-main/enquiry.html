@@ -38,7 +38,7 @@
 
     <section class="enquiry-hero">
         <div class="enquiry-hero-bg">
-            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Contact Overlander">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Contact Overlander">
             <div class="enquiry-hero-overlay"></div>
         </div>
         <div class="enquiry-hero-content fade-in-up">
@@ -93,26 +93,16 @@
 
                         <div class="form-row">
                             <select id="inq-destination" required class="select-placeholder">
-                                <option value="" disabled selected hidden>Preferred Destination*</option>
-                                <option value="Bali & Nusa Tenggara">Bali & Nusa Tenggara</option>
-                                <option value="Komodo National Park">Komodo National Park</option>
+                                <option value="" disabled selected hidden>Preferred Region*</option>
                                 <option value="Java Volcanoes (Bromo/Ijen)">Java Volcanoes (Bromo/Ijen)</option>
-                                <option value="Papua / Raja Ampat">Papua / Raja Ampat</option>
+                                <option value="Bali Overland Expeditions">Bali Overland Expeditions</option>
+                                <option value="Lombok & Sumbawa Savana">Lombok & Sumbawa Savana</option>
+                                <option value="Sumba Culture & Coast">Sumba Culture & Coast</option>
                                 <option value="Bespoke Expeditions">Bespoke Expeditions (Undecided)</option>
                             </select>
                         </div>
-                        
-                        <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                            <input type="text" id="inq-date" placeholder="Planned Date (DD/MM/YYYY)*" required>
-                            
-                            <select id="inq-guests" required class="select-placeholder">
-                                <option value="" disabled selected hidden>Number of Guests*</option>
-                                <option value="1-2 Person">1 - 2 Guests</option>
-                                <option value="3-4 Person">3 - 4 Guests</option>
-                                <option value="5-8 Person">5 - 8 Guests</option>
-                                <option value="Bespoke Group">Bespoke Group</option>
-                            </select>
-                        </div>
+
+    
 
                         <div class="form-row">
                             <input type="email" id="inq-email" placeholder="Email Address*" required>
@@ -152,13 +142,14 @@
 
     <footer class="footer">
         <div class="footer-container">
+            
             <div class="footer-brand-contact">
                 <h2>OVERLANDER</h2>
-                <p class="footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
+                <p class="footer-desc" id="db-footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
                 <ul class="footer-contact-list">
-                    <li><i class="fas fa-phone-alt"></i> +62 (812) 3456 7890</li>
-                    <li><i class="far fa-envelope"></i> explore@overlander.id</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</li>
+                    <li><i class="fas fa-phone-alt"></i> <span id="db-footer-phone">+62 (812) 3456 7890</span></li>
+                    <li><i class="far fa-envelope"></i> <span id="db-footer-email">explore@overlander.id</span></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span id="db-footer-address">Bali, Indonesia</span></li>
                 </ul>
             </div>
 
@@ -192,30 +183,85 @@
                 
                 <h4 style="margin-top: 35px; margin-bottom: 15px;">Follow Us</h4>
                 <ul class="footer-socials">
-                    <li class="icon-content"><a data-social="whatsapp" href="https://wa.me/6285748175548" target="_blank"><div class="filled"></div><i class="fab fa-whatsapp"></i></a><div class="tooltip">WhatsApp</div></li>
-                    <li class="icon-content"><a data-social="facebook" href="https://www.facebook.com/" target="_blank"><div class="filled"></div><i class="fab fa-facebook-f"></i></a><div class="tooltip">Facebook</div></li>
-                    <li class="icon-content"><a data-social="instagram" href="https://www.instagram.com/" target="_blank"><div class="filled"></div><i class="fab fa-instagram"></i></a><div class="tooltip">Instagram</div></li>
-                    <li class="icon-content"><a data-social="youtube" href="https://www.youtube.com/" target="_blank"><div class="filled"></div><i class="fab fa-youtube"></i></a><div class="tooltip">YouTube</div></li>
+                    <li class="icon-content">
+                        <a data-social="whatsapp" aria-label="Whatsapp" href="https://wa.me/6285748175548" target="_blank" id="db-social-wa">
+                            <div class="filled"></div>
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <div class="tooltip">WhatsApp</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/" target="_blank" id="db-social-fb">
+                            <div class="filled"></div>
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <div class="tooltip">Facebook</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/" target="_blank" id="db-social-ig">
+                            <div class="filled"></div>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                    </li>
+                    <li class="icon-content">
+                        <a data-social="youtube" aria-label="YouTube" href="https://www.youtube.com/" target="_blank" id="db-social-yt">
+                            <div class="filled"></div>
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <div class="tooltip">YouTube</div>
+                    </li>
                 </ul>
             </div>
+
         </div>
 
         <div class="footer-bottom">
             <div class="footer-copyright">
-                <p>&copy; 2026 Overlander Indonesia. All rights reserved. | Design and Develop by <a href="https://sciedutech.my.id" target="_blank" class="developer-link">sciedutech.my.id</a> (<a href="https://instagram.com/ryashda_" target="_blank" class="developer-link">@ryashda_</a>)</p>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Overlander Indonesia. All rights reserved. | Design and Develop by <a href="https://sciedutech.my.id" target="_blank" class="developer-link">sciedutech.my.id</a> (<a href="https://instagram.com/ryashda_" target="_blank" class="developer-link">@ryashda_</a>)</p>
+                </div>
             </div>
+            
             <div class="footer-legal-links">
                 <a href="#" class="open-modal" data-modal="modal-terms">Terms & Conditions</a>
                 <a href="#" class="open-modal" data-modal="modal-privacy">Privacy Policy</a>
                 <a href="#" class="open-modal" data-modal="modal-cookie">Cookie Policy</a>
             </div>
+            
         </div>
     </footer>
 
-    <div id="modal-terms" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Terms & Conditions</h2><div class="legal-body"><p>Terms details...</p></div></div></div>
-    <div id="modal-privacy" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Privacy Policy</h2><div class="legal-body"><p>Privacy details...</p></div></div></div>
-    <div id="modal-cookie" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Cookie Policy</h2><div class="legal-body"><p>Cookie details...</p></div></div></div>
+    <div id="modal-terms" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2 class="legal-title">Terms & Conditions</h2>
+            <div class="legal-body" id="db-modal-terms">
+                <p>Memuat data dari server...</p>
+            </div>
+        </div>
+    </div>
 
-    <script src="js/index.js"></script>
+    <div id="modal-privacy" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2 class="legal-title">Privacy Policy</h2>
+            <div class="legal-body" id="db-modal-privacy">
+                <p>Memuat data dari server...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cookie" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2 class="legal-title">Cookie Policy</h2>
+            <div class="legal-body" id="db-modal-cookie">
+                <p>Memuat data dari server...</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>

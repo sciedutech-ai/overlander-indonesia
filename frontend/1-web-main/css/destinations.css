@@ -195,6 +195,12 @@
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
+    
+    /* FIX: Agar teks panjang (seperti Trans-Java) turun ke baris baru dan tidak menabrak ujung gambar */
+    max-width: 80%;
+    white-space: normal;
+    line-height: 1.4;
+    border-radius: 2px;
 }
 
 /* Detail Teks Kartu */
@@ -261,22 +267,76 @@
 }
 
 /* --- RESPONSIVE MOBILE --- */
+/* --- RESPONSIVE MOBILE & TABLET --- */
 @media (max-width: 992px) {
     .filter-widget-wrapper {
-        flex-direction: column; /* Baris filter menumpuk vertikal di tablet/HP */
-        align-items: flex-start;
-        gap: 30px;
+        flex-direction: column; 
+        align-items: center; /* Menengahkan search & filter */
+        gap: 20px;
+        width: 100%;
     }
-    .search-box-container { max-width: 100%; }
-    .filter-dropdowns { width: 100%; justify-content: space-between; }
-    .filter-dropdowns select { flex: 1; }
+    
+    .search-box-container { 
+        max-width: 100%; 
+        width: 100%; 
+    }
+    
+    .filter-dropdowns { 
+        width: 100%; 
+        display: flex;
+        justify-content: space-between; 
+        gap: 15px; /* Memberi jarak aman antara Dropdown Region dan Tier */
+    }
+    
+    .select-wrapper {
+        width: 100%; 
+        flex: 1; /* Membagi dua dropdown sama rata */
+    }
+    
+    .filter-dropdowns select { 
+        width: 100%; 
+    }
 }
 
 @media (max-width: 768px) {
+    /* 1. Merapikan Header Hero agar pas di tengah dan proporsional */
+    .dest-hero { height: 40vh; }
+    
+    .dest-hero-content {
+        padding: 0 5%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .dest-hero-content h1 { 
+        font-size: 2.2rem; /* Diperkecil agar tidak menabrak tepi layar */
+        letter-spacing: 4px;
+        line-height: 1.2;
+    }
+    
+    .dest-hero-content .dest-tagline {
+        font-size: 0.75rem;
+    }
+
+    /* 2. Memberi jarak (padding) agar Search & Filter tidak menempel tepi layar HP */
+    .filter-section {
+        padding: 20px 5%; 
+    }
+    
+    .search-box-container input[type="text"] {
+        font-size: 0.9rem; /* Ukuran font disesuaikan agar tidak terpotong */
+    }
+
+    /* 3. Grid Destinasi */
     .destinations-grid {
         grid-template-columns: 1fr; /* 1 Kolom penuh di HP */
-        gap: 50px;
+        gap: 40px;
     }
-    .dest-hero { height: 40vh; }
+    
     .dest-details h3 { font-size: 1.5rem; }
+
+    /* 4. Menambahkan jarak bawah yang besar agar tidak tertutup Menu Bottom Bar */
+    .dest-grid-section {
+        padding-bottom: 120px; 
+    }
 }

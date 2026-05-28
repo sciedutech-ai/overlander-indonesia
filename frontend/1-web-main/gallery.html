@@ -44,96 +44,85 @@
         </div>
     </header>
 
-    <section class="gallery-filter-section">
-        <div class="container">
-            <ul class="gallery-filters" id="gallery-filters">
-                <li class="filter-item active" data-filter="all">All Horizons</li>
-                <li class="filter-item" data-filter="overland">Overland 4x4</li>
-                <li class="filter-item" data-filter="marine">Marine Phinisi</li>
-                <li class="filter-item" data-filter="aerial">Aerial Views</li>
-                <li class="filter-item" data-filter="culture">Culture</li>
-            </ul>
-        </div>
-    </section>
+    
+   
 
     <section class="gallery-content-section">
         <div class="container-fluid">
-            <div class="luxury-masonry" id="luxury-masonry">
-                
-                <div class="masonry-item" data-category="overland">
-                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Overland Jeep">
-                    <div class="masonry-overlay">
-                        <span>East Java Caldrons</span>
-                    </div>
-                </div>
-
-                <div class="masonry-item" data-category="marine">
-                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Phinisi Yacht">
-                    <div class="masonry-overlay">
-                        <span>Komodo Archipelago</span>
-                    </div>
-                </div>
-
-                <div class="masonry-item" data-category="culture">
-                    <img src="https://images.unsplash.com/photo-1596404768340-410c550dfb6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Local Culture">
-                    <div class="masonry-overlay">
-                        <span>Sumba Traditions</span>
-                    </div>
-                </div>
-
-                <div class="masonry-item" data-category="aerial">
-                    <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Aerial View">
-                    <div class="masonry-overlay">
-                        <span>Papua Highlands</span>
-                    </div>
-                </div>
-
-                <div class="masonry-item" data-category="marine">
-                    <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Raja Ampat">
-                    <div class="masonry-overlay">
-                        <span>The Sapphire Realm</span>
-                    </div>
-                </div>
-
-                <div class="masonry-item" data-category="overland">
-                    <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Volcano">
-                    <div class="masonry-overlay">
-                        <span>Sea of Sand</span>
-                    </div>
-                </div>
-
+            <!-- Tambahkan id="db-luxury-masonry" di sini -->
+            <div class="luxury-masonry" id="db-luxury-masonry">
+                <!-- Konten Masonry akan dimuat secara dinamis oleh JavaScript -->
+                <p style="text-align: center; color: #888; width: 100%; grid-column: 1 / -1; padding: 50px 0;">Memuat koleksi foto visual...</p>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="footer-container">
+            
             <div class="footer-brand-contact">
                 <h2>OVERLANDER</h2>
-                <p class="footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
+                <!-- Tambahkan id="db-footer-desc" -->
+                <p class="footer-desc" id="db-footer-desc">Luxury Private Expeditions in Indonesia. Crafted for modern day adventurers eager to explore the remote corners of the archipelago.</p>
                 <ul class="footer-contact-list">
-                    <li><i class="fas fa-phone-alt"></i> +62 (812) 3456 7890</li>
-                    <li><i class="far fa-envelope"></i> explore@overlander.id</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</li>
+                    <!-- Bungkus teks dengan span dan beri ID -->
+                    <li><i class="fas fa-phone-alt"></i> <span id="db-footer-phone">+62 (812) 3456 7890</span></li>
+                    <li><i class="far fa-envelope"></i> <span id="db-footer-email">explore@overlander.id</span></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span id="db-footer-address">Bali, Indonesia</span></li>
                 </ul>
             </div>
 
             <div class="footer-links">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="about.html" class="footer-animated-link"><span class="actual-text">- About Us</span><span aria-hidden="true" class="hover-text">- About Us</span></a></li>
-                    <li><a href="catalog.html" class="footer-animated-link"><span class="actual-text">- Journeys</span><span aria-hidden="true" class="hover-text">- Journeys</span></a></li>
-                    <li><a href="gallery.html" class="footer-animated-link"><span class="actual-text">- Visual Diary</span><span aria-hidden="true" class="hover-text">- Visual Diary</span></a></li>
-                    <li><a href="enquiry.html" class="footer-animated-link"><span class="actual-text">- Contact Us</span><span aria-hidden="true" class="hover-text">- Contact Us</span></a></li>
+                    <li>
+                        <a href="about.html" class="footer-animated-link">
+                            <span class="actual-text">- About Us</span>
+                            <span aria-hidden="true" class="hover-text">- About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="catalog.html" class="footer-animated-link">
+                            <span class="actual-text">- Journeys</span>
+                            <span aria-hidden="true" class="hover-text">- Journeys</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html" class="footer-animated-link">
+                            <span class="actual-text">- Visual Diary</span>
+                            <span aria-hidden="true" class="hover-text">- Visual Diary</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="enquiry.html" class="footer-animated-link">
+                            <span class="actual-text">- Contact Us</span>
+                            <span aria-hidden="true" class="hover-text">- Contact Us</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
             <div class="footer-links">
                 <h4>Client</h4>
                 <ul>
-                    <li><a href="client-login.html" class="footer-animated-link"><span class="actual-text">- Client Login</span><span aria-hidden="true" class="hover-text">- Client Login</span></a></li>
-                    <li><a href="travel-advisory.html" class="footer-animated-link"><span class="actual-text">- Travel Advisory</span><span aria-hidden="true" class="hover-text">- Travel Advisory</span></a></li>
-                    <li><a href="help-center.html" class="footer-animated-link"><span class="actual-text">- Help Center</span><span aria-hidden="true" class="hover-text">- Help Center</span></a></li>
+                    <li>
+                        <a href="client-login.html" class="footer-animated-link">
+                            <span class="actual-text">- Client Login</span>
+                            <span aria-hidden="true" class="hover-text">- Client Login</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="travel-advisory.html" class="footer-animated-link">
+                            <span class="actual-text">- Travel Advisory</span>
+                            <span aria-hidden="true" class="hover-text">- Travel Advisory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="help-center.html" class="footer-animated-link">
+                            <span class="actual-text">- Help Center</span>
+                            <span aria-hidden="true" class="hover-text">- Help Center</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -148,31 +137,111 @@
                 
                 <h4 style="margin-top: 35px; margin-bottom: 15px;">Follow Us</h4>
                 <ul class="footer-socials">
-                    <li class="icon-content"><a data-social="whatsapp" href="https://wa.me/6285748175548" target="_blank"><div class="filled"></div><i class="fab fa-whatsapp"></i></a><div class="tooltip">WhatsApp</div></li>
-                    <li class="icon-content"><a data-social="facebook" href="https://www.facebook.com/" target="_blank"><div class="filled"></div><i class="fab fa-facebook-f"></i></a><div class="tooltip">Facebook</div></li>
-                    <li class="icon-content"><a data-social="instagram" href="https://www.instagram.com/" target="_blank"><div class="filled"></div><i class="fab fa-instagram"></i></a><div class="tooltip">Instagram</div></li>
-                    <li class="icon-content"><a data-social="youtube" href="https://www.youtube.com/" target="_blank"><div class="filled"></div><i class="fab fa-youtube"></i></a><div class="tooltip">YouTube</div></li>
+                    <li class="icon-content">
+                        <!-- Tambahkan id="db-social-wa" -->
+                        <a data-social="whatsapp" aria-label="Whatsapp" href="https://wa.me/6285748175548" target="_blank" id="db-social-wa">
+                            <div class="filled"></div>
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <div class="tooltip">WhatsApp</div>
+                    </li>
+                    <li class="icon-content">
+                        <!-- Tambahkan id="db-social-fb" -->
+                        <a data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/" target="_blank" id="db-social-fb">
+                            <div class="filled"></div>
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <div class="tooltip">Facebook</div>
+                    </li>
+                    <li class="icon-content">
+                        <!-- Tambahkan id="db-social-ig" -->
+                        <a data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/" target="_blank" id="db-social-ig">
+                            <div class="filled"></div>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                    </li>
+                    <li class="icon-content">
+                        <!-- Tambahkan id="db-social-yt" -->
+                        <a data-social="youtube" aria-label="YouTube" href="https://www.youtube.com/" target="_blank" id="db-social-yt">
+                            <div class="filled"></div>
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <div class="tooltip">YouTube</div>
+                    </li>
                 </ul>
             </div>
+
         </div>
 
         <div class="footer-bottom">
             <div class="footer-copyright">
-                <p>&copy; 2026 Overlander Indonesia. All rights reserved. | Design and Develop by <a href="https://sciedutech.my.id" target="_blank" class="developer-link">sciedutech.my.id</a> (<a href="https://instagram.com/ryashda_" target="_blank" class="developer-link">@ryashda_</a>)</p>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Overlander Indonesia. All rights reserved. | Design and Develop by <a href="https://sciedutech.my.id" target="_blank" class="developer-link">sciedutech.my.id</a> (<a href="https://instagram.com/ryashda_" target="_blank" class="developer-link">@ryashda_</a>)</p>
+                </div>
             </div>
+            
             <div class="footer-legal-links">
                 <a href="#" class="open-modal" data-modal="modal-terms">Terms & Conditions</a>
                 <a href="#" class="open-modal" data-modal="modal-privacy">Privacy Policy</a>
                 <a href="#" class="open-modal" data-modal="modal-cookie">Cookie Policy</a>
             </div>
+            
         </div>
     </footer>
 
-    <div id="modal-terms" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Terms & Conditions</h2><div class="legal-body"><p>Terms Content...</p></div></div></div>
-    <div id="modal-privacy" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Privacy Policy</h2><div class="legal-body"><p>Privacy Content...</p></div></div></div>
-    <div id="modal-cookie" class="legal-modal"><div class="legal-modal-content"><span class="close-modal"><i class="fas fa-times"></i></span><h2 class="legal-title">Cookie Policy</h2><div class="legal-body"><p>Cookie Content...</p></div></div></div>
+    <!-- MODAL TERMS -->
+    <div id="modal-terms" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2 class="legal-title">Terms & Conditions</h2>
+            <!-- Tambahkan id="db-modal-terms" dan kosongkan isinya -->
+            <div class="legal-body" id="db-modal-terms">
+                <p>Memuat data dari server...</p>
+            </div>
+        </div>
+    </div>
 
-    <script src="js/index.js"></script>
+    <!-- MODAL PRIVACY -->
+    <div id="modal-privacy" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2 class="legal-title">Privacy Policy</h2>
+            <!-- Tambahkan id="db-modal-privacy" dan kosongkan isinya -->
+            <div class="legal-body" id="db-modal-privacy">
+                <p>Memuat data dari server...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL COOKIE -->
+    <div id="modal-cookie" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <h2 class="legal-title">Cookie Policy</h2>
+            <!-- Tambahkan id="db-modal-cookie" dan kosongkan isinya -->
+            <div class="legal-body" id="db-modal-cookie">
+                <p>Memuat data dari server...</p>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="https://wa.me/6285748175548" class="floating-concierge" target="_blank">
+        <div class="concierge-sign">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="concierge-text">Consult an Expert</div>
+    </a>
+
+    <div class="mobile-bottom-bar">
+        <a href="catalog.html" class="btn-bottom-book">BOOK NOW</a>
+        <a href="https://wa.me/6281234567890" class="btn-bottom-wa" target="_blank">WHATSAPP</a>
+    </div>
+
+
+    <!-- ... (Kode Legal Modals ber-ID) ... -->
+    <script type="module" src="js/index.js"></script>
     <script src="js/gallery.js"></script>
 </body>
 </html>
